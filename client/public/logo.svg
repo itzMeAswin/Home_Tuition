@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E5C058"/>
+      <stop offset="50%" stop-color="#C29B1A"/>
+      <stop offset="100%" stop-color="#84660B"/>
+    </linearGradient>
+    <linearGradient id="goldPetal" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#B8860B"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Stylized Lotus Emblem -->
+  <g transform="translate(0, -20)">
+    <!-- Central Main Petal -->
+    <path d="M250 50 C230 110 215 190 250 290 C285 190 270 110 250 50 Z" fill="url(#goldGrad)"/>
+    
+    <!-- Inner Left Petal -->
+    <path d="M250 120 C200 130 160 190 190 270 C220 220 238 180 250 120 Z" fill="url(#goldPetal)"/>
+    <!-- Inner Right Petal -->
+    <path d="M250 120 C300 130 340 190 310 270 C280 220 262 180 250 120 Z" fill="url(#goldPetal)"/>
+    
+    <!-- Outer Left Petal -->
+    <path d="M230 190 C160 170 100 230 130 300 C180 270 210 240 230 190 Z" fill="url(#goldGrad)"/>
+    <!-- Outer Right Petal -->
+    <path d="M270 190 C340 170 400 230 370 300 C320 270 290 240 270 190 Z" fill="url(#goldGrad)"/>
+
+    <!-- Bottom Left Flaring Leaf -->
+    <path d="M210 280 C130 270 50 310 70 330 C130 345 190 320 210 280 Z" fill="url(#goldPetal)"/>
+    <!-- Bottom Right Flaring Leaf -->
+    <path d="M290 280 C370 270 450 310 430 330 C370 345 310 320 290 280 Z" fill="url(#goldPetal)"/>
+
+    <!-- Central Base Arc -->
+    <path d="M160 320 Q250 370 340 320 Q250 350 160 320 Z" fill="url(#goldGrad)"/>
+  </g>
+
+  <!-- Typography: AKSHARAS ACADEMY -->
+  <text x="250" y="405" 
+        text-anchor="middle" 
+        font-family="'Outfit', 'Plus Jakarta Sans', sans-serif" 
+        font-size="44" 
+        font-weight="900" 
+        letter-spacing="5" 
+        fill="#3D2F03">
+    AKSHARAS
+  </text>
+  
+  <!-- Subtitle Line -->
+  <line x1="120" y1="428" x2="380" y2="428" stroke="#C29B1A" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Academy Subtext -->
+  <text x="250" y="465" 
+        text-anchor="middle" 
+        font-family="'Outfit', 'Plus Jakarta Sans', sans-serif" 
+        font-size="28" 
+        font-weight="700" 
+        letter-spacing="14" 
+        fill="#5F4805">
+    ACADEMY
+  </text>
+</svg>
