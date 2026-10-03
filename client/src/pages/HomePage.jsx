@@ -95,8 +95,8 @@ const HomePage = ({ onOpenBookingModal }) => {
               {/* Institution Badge */}
               <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-100/90 border border-brand-300/60 text-brand-950 text-xs sm:text-sm font-bold shadow-xs">
                 <span className="w-2 h-2 rounded-full bg-brand-600 animate-ping"></span>
-                <span>Online Home Tution Center • Aksharas Academy</span>
-                <span className="text-brand-700 font-extrabold hidden sm:inline">| Trichy</span>
+                <span>Online Home Tution Center • Excellence in Education</span>
+                <span className="text-brand-700 font-extrabold hidden sm:inline">| Chennai</span>
               </div>
 
               {/* Exact Requested Headline */}
@@ -165,7 +165,7 @@ const HomePage = ({ onOpenBookingModal }) => {
                   <div className="flex items-center gap-4 pb-4 border-b border-stone-100">
                     <div className="relative">
                       <UserAvatar
-                        name="Sandhya Subbaraman"
+                        name="Mrs. Lakshmi S."
                         role="tutor"
                         size="lg"
                         className="shadow-md border-2 border-brand-400"
@@ -176,7 +176,7 @@ const HomePage = ({ onOpenBookingModal }) => {
                     </div>
                     <div>
                       <h4 className="font-heading font-bold text-bronze-950 text-base leading-tight">
-                        Mrs. Sandhya Subbaraman
+                        Mrs. Lakshmi S.
                       </h4>
                       <p className="text-xs text-brand-800 font-bold">
                         Founder & Senior Lead Educator
@@ -311,7 +311,7 @@ const HomePage = ({ onOpenBookingModal }) => {
                 </div>
                 <h3 className="text-lg font-heading font-bold text-bronze-950 mb-2">Experienced Tutors</h3>
                 <p className="text-sm text-stone-600 leading-relaxed">
-                  Led by Founder Mrs. Sandhya Subbaraman (SET Qualified, 15+ years experience). All tutors are screened for deep scholarship and pedagogical skill.
+                  Led by Founder Mrs. Lakshmi S. (SET Qualified, 15+ years experience). All tutors are screened for deep scholarship and pedagogical skill.
                 </p>
               </div>
             </div>

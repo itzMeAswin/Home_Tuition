@@ -40,19 +40,19 @@ const seedData = async () => {
       email: 'admin@tutioncenter.com',
       password: 'admin123',
       role: 'admin',
-      phone: '+91 9345793979',
+      phone: '+91 9876543210',
       avatar: ''
     });
 
     const tutorUser = await User.create({
-      name: 'Mrs. Sandhya Subbaraman',
-      email: 'sandhya@aksharasacademy.com',
+      name: 'Mrs. Lakshmi S.',
+      email: 'tutor@tutioncenter.com',
       password: 'tutor123',
       role: 'tutor',
-      phone: '+91 9345793979',
+      phone: '+91 9876543210',
       avatar: '',
       qualification: 'M.Com, M.Phil, MBA, SET Qualified',
-      bio: 'Visionary Founder of Aksharas Academy, Trichy. 15+ years of pedagogical excellence in Commerce, Accountancy, Economics & Business Studies.',
+      bio: 'Lead Educator at Online Home Tution Center, Chennai. 15+ years of pedagogical excellence in Commerce, Accountancy, Economics & Business Studies.',
       subjects: ['Accountancy', 'Economics', 'Business Studies', 'Management Studies']
     });
 
@@ -130,9 +130,9 @@ const seedData = async () => {
     console.log('[SEED] Creating Tutors...');
     await Tutor.create([
       {
-        name: 'Mrs. Sandhya Subbaraman',
-        email: 'sandhya@aksharasacademy.com',
-        phone: '+91 9345793979',
+        name: 'Mrs. Lakshmi S.',
+        email: 'tutor@tutioncenter.com',
+        phone: '+91 9876543210',
         photo: '',
         qualification: 'M.Com, M.Phil, MBA, SET Qualified',
         experienceYears: 15,
@@ -140,7 +140,7 @@ const seedData = async () => {
         rating: 5.0,
         studentsTaught: 500,
         badge: 'Founder & Senior Lead Educator',
-        bio: 'Accomplished commerce educator with over 15 years of teaching experience. Specialized in blending academic rigor with intuitive real-world examples in Accountancy, Economics, and Business Studies. YouTube educator since 2022 with hundreds of video lessons.',
+        bio: 'Accomplished commerce educator with over 15 years of teaching experience. Specialized in blending academic rigor with intuitive real-world examples in Accountancy, Economics, and Business Studies. Dedicated educator with hundreds of video lessons.',
         teachingPhilosophy: 'Every student has the potential to master commerce when concepts are unraveled with logic rather than memorized through formulas.',
         teachingStyle: 'Concept-Oriented, Socratic & Problem-Solving Centered',
         subjects: ['Accountancy', 'Economics', 'Business Studies', 'Management Studies', 'CA/CMA Foundation'],
@@ -154,7 +154,7 @@ const seedData = async () => {
       {
         name: 'Dr. K. Ramanathan',
         email: 'ramanathan@tutioncenter.com',
-        phone: '+91 9345793980',
+        phone: '+91 9876543211',
         photo: '',
         qualification: 'Ph.D. in Applied Mathematics, M.Sc.',
         experienceYears: 12,
@@ -174,7 +174,7 @@ const seedData = async () => {
       {
         name: 'Prof. Sneha Iyer',
         email: 'sneha@tutioncenter.com',
-        phone: '+91 9345793981',
+        phone: '+91 9876543212',
         photo: '',
         qualification: 'M.Sc. Physics (Gold Medalist), B.Ed',
         experienceYears: 8,
@@ -194,7 +194,7 @@ const seedData = async () => {
       {
         name: 'Mr. Rajesh V.',
         email: 'rajesh@tutioncenter.com',
-        phone: '+91 9345793982',
+        phone: '+91 9876543213',
         photo: '',
         qualification: 'Chartered Accountant (CA), B.Com',
         experienceYears: 9,
@@ -242,7 +242,7 @@ const seedData = async () => {
         ],
         duration: 'Academic Year Program (10 Months)',
         sessionsPerWeek: '4 Sessions / Week (60 mins each)',
-        tutorName: 'Mrs. Sandhya Subbaraman',
+        tutorName: 'Mrs. Lakshmi S.',
         image: '',
         isFeatured: true
       },
@@ -268,7 +268,7 @@ const seedData = async () => {
         ],
         duration: 'Academic Year Program (10 Months)',
         sessionsPerWeek: '3 Sessions / Week',
-        tutorName: 'Mrs. Sandhya Subbaraman',
+        tutorName: 'Mrs. Lakshmi S.',
         image: '',
         isFeatured: true
       },
@@ -294,7 +294,7 @@ const seedData = async () => {
         ],
         duration: 'Academic Year Program (8 Months)',
         sessionsPerWeek: '3 Sessions / Week',
-        tutorName: 'Mrs. Sandhya Subbaraman',
+        tutorName: 'Mrs. Lakshmi S.',
         image: '',
         isFeatured: true
       },
@@ -319,7 +319,7 @@ const seedData = async () => {
         ],
         duration: '6 Months Intensive',
         sessionsPerWeek: '5 Sessions / Week',
-        tutorName: 'Mrs. Sandhya Subbaraman & CA Rajesh V.',
+        tutorName: 'Mrs. Lakshmi S. & CA Rajesh V.',
         image: '',
         isFeatured: true
       },
@@ -339,7 +339,7 @@ const seedData = async () => {
         ],
         duration: 'Semester Basis',
         sessionsPerWeek: '3 Sessions / Week',
-        tutorName: 'Mrs. Sandhya Subbaraman',
+        tutorName: 'Mrs. Lakshmi S.',
         image: '',
         isFeatured: false
       },
@@ -353,13 +353,13 @@ const seedData = async () => {
         mode: 'Online',
         description: 'Result-oriented coaching led by SET qualified faculty. Conceptual depth, previous year paper analysis, mock tests, and exam-focused strategies for Paper 1 & Paper 2.',
         highlights: [
-          'Led by SET-qualified educator Mrs. Sandhya Subbaraman',
+          'Led by SET-qualified educator Mrs. Lakshmi S.',
           'Over 1,000 previous year questions categorized topic-wise',
           'Speed tricks for Paper 1 Data Interpretation and Teaching Aptitude'
         ],
         duration: '4 Months Crash / 8 Months Regular',
         sessionsPerWeek: '4 Sessions / Week',
-        tutorName: 'Mrs. Sandhya Subbaraman',
+        tutorName: 'Mrs. Lakshmi S.',
         image: '',
         isFeatured: false
       }
@@ -368,75 +368,75 @@ const seedData = async () => {
     console.log('[SEED] Creating Testimonials...');
     await Testimonial.create([
       {
-        name: 'Ms. Aadarshana',
-        district: 'Idukki / Kerala',
+        name: 'Ms. Ananya R.',
+        district: 'Online Batch',
         grade: 'Class 12',
         batch: 'CBSE 2024-25 (Online Batch)',
         subject: 'Accountancy',
         image: '',
         score: 'Centum 100/100',
-        quote: 'I was a student of Aksharas Academy in 2024-25. Sandhya mam\'s classes were really effective and I understood every concept in the first go. I scored 100/100 on my Accountancy board paper! I truly credit these classes for my success.',
-        parentQuote: 'We were in Kerala and worried about online coaching quality, but Sandhya Ma\'am gave our daughter personal attention every day.',
+        quote: 'I was a student of Online Home Tution Center in 2024-25. The faculty classes were really effective and I understood every concept in the first go. I scored 100/100 on my Accountancy board paper! I truly credit these classes for my success.',
+        parentQuote: 'We were worried about online coaching quality, but the faculty gave our daughter personal attention every day.',
         rating: 5,
         featured: true
       },
       {
-        name: 'Ms. Vishhalini Venthan',
-        district: 'Trichy',
+        name: 'Ms. Kavitha M.',
+        district: 'Chennai',
         grade: 'Class 12',
         batch: 'CBSE 2024 (Offline & Hybrid)',
         subject: 'Accountancy',
         image: '',
         score: '95/100',
-        quote: 'I studied 12th Accountancy at Aksharas Academy. I scored 95/100, and the credit truly goes to Sandhya ma\'am. Her way of teaching is very clear, structured, and easy to understand, which made Accountancy feel much simpler.',
+        quote: 'I studied 12th Accountancy at Online Home Tution Center. I scored 95/100, and the credit truly goes to the lead faculty. Her way of teaching is very clear, structured, and easy to understand, which made Accountancy feel much simpler.',
         rating: 5,
         featured: true
       },
       {
-        name: 'Ms. Madhuleka',
-        district: 'Cuddalore',
+        name: 'Ms. Priyanka S.',
+        district: 'Coimbatore',
         grade: 'Class 12',
         batch: 'Online Batch',
         subject: 'Accountancy & Economics',
         image: '',
         score: '94/100',
-        quote: 'I\'ve been learning since the beginning of Grade 12. Accountancy used to feel really difficult, but the way she explains things makes it so simple and easy. Her YouTube videos for Business Studies and Economics were super helpful during exams.',
+        quote: 'I\'ve been learning since the beginning of Grade 12. Accountancy used to feel really difficult, but the way she explains things makes it so simple and easy. Her video lessons for Business Studies and Economics were super helpful during exams.',
         rating: 5,
         featured: true
       },
       {
-        name: 'Ms. Akshara Ayappan',
-        district: 'Trichy',
+        name: 'Ms. Divya K.',
+        district: 'Chennai',
         grade: 'Class 12',
         batch: 'Class 12 Batch',
         subject: 'Commerce & Economics',
         image: '',
         score: 'Above 90',
-        quote: 'Sandhya Mam\'s classes were highly effective. One of her greatest strengths is her clarity in explanation, step-by-step using practical examples. She maintained a friendly learning environment where students felt comfortable asking doubts without hesitation.',
+        quote: 'The faculty classes were highly effective. One of her greatest strengths is her clarity in explanation, step-by-step using practical examples. She maintained a friendly learning environment where students felt comfortable asking doubts without hesitation.',
         rating: 5,
         featured: true
       },
       {
-        name: 'Mr. Gurumoorthy',
-        district: 'Trichy',
+        name: 'Mr. Rahul V.',
+        district: 'Chennai',
         grade: 'Class 12',
         batch: 'CBSE Board',
         subject: 'Accountancy',
         image: '',
         score: 'Above 90',
-        quote: 'Just four months before my board exams, I couldn\'t find any tuition center willing to take me. Aksharas Academy gave me that opportunity. Ma\'am quickly covered the entire syllabus and guided me well for my CBSE Accountancy exam.',
+        quote: 'Just four months before my board exams, I couldn\'t find any tuition center willing to take me. Online Home Tution Center gave me that opportunity. The tutor quickly covered the entire syllabus and guided me well for my CBSE Accountancy exam.',
         rating: 5,
         featured: true
       },
       {
-        name: 'Ms. Harini',
-        district: 'Trichy',
+        name: 'Ms. Sneha P.',
+        district: 'Coimbatore',
         grade: 'Class 12',
         batch: 'Class 12 Batch',
         subject: 'Accountancy',
         image: '',
         score: 'Above 90',
-        quote: 'Sandhya ma\'am put in more than 200% effort to ensure all our concepts were clear. We practiced numerous sums across different patterns before the exams, which really built my confidence.',
+        quote: 'The lead faculty put in immense effort to ensure all our concepts were clear. We practiced numerous sums across different patterns before the exams, which really built my confidence.',
         rating: 5,
         featured: true
       }
@@ -798,7 +798,7 @@ const seedData = async () => {
     await LessonPlan.create([
       {
         tutor: tutorUser._id,
-        tutorName: 'Mrs. Sandhya Subbaraman',
+        tutorName: 'Mrs. Lakshmi S.',
         title: 'Profit & Loss Appropriation Account & Partner Remuneration',
         subject: 'Accountancy',
         grade: 'Class 12',
@@ -819,7 +819,7 @@ const seedData = async () => {
       },
       {
         tutor: tutorUser._id,
-        tutorName: 'Mrs. Sandhya Subbaraman',
+        tutorName: 'Mrs. Lakshmi S.',
         title: 'National Income Accounting: Real vs Nominal GDP & Price Deflator',
         subject: 'Economics',
         grade: 'Class 12',
@@ -855,7 +855,7 @@ const seedData = async () => {
         message: 'Student needs urgent revision in Company Accounts and Cash Flow adjustments before pre-board exams.',
         learningGoals: 'Targeting 90%+ in CBSE Commerce Board exams',
         status: 'Confirmed',
-        assignedTutor: 'Mrs. Sandhya Subbaraman',
+        assignedTutor: 'Mrs. Lakshmi S.',
         meetingLink: 'https://meet.google.com/oht-demo-class'
       },
       {
@@ -873,7 +873,7 @@ const seedData = async () => {
         message: 'Looking for conceptual foundation in Microeconomics and statistics.',
         learningGoals: 'Strong concept foundations from Grade 11',
         status: 'Pending',
-        assignedTutor: 'Mrs. Sandhya Subbaraman'
+        assignedTutor: 'Mrs. Lakshmi S.'
       }
     ]);
 
@@ -907,7 +907,7 @@ const seedData = async () => {
         title: 'TS Grewal Worksheet: Partnership Admission Adjustments',
         subject: 'Accountancy',
         grade: 'Class 12',
-        tutorName: 'Mrs. Sandhya Subbaraman',
+        tutorName: 'Mrs. Lakshmi S.',
         description: 'Complete Revaluation Account and Partner Capital Account adjustments for Illustration 32 and Question 45.',
         totalMarks: 25,
         dueDate: '2026-10-08',

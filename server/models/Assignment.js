@@ -4,7 +4,7 @@ const assignmentSchema = new mongoose.Schema({
   title: { type: String, required: true },
   subject: { type: String, required: true },
   grade: { type: String, required: true },
-  tutorName: { type: String, default: 'Mrs. Sandhya Subbaraman' },
+  tutorName: { type: String, default: 'Mrs. Lakshmi S.' },
   description: { type: String, required: true },
   totalMarks: { type: Number, default: 20 },
   dueDate: { type: String, required: true },

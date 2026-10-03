@@ -59,7 +59,7 @@ const TutorDashboard = () => {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center md:justify-between gap-6">
           <div className="flex items-center gap-4">
             <UserAvatar
-              name={user?.name || 'Mrs. Sandhya Subbaraman'}
+              name={user?.name || 'Mrs. Lakshmi S.'}
               role="tutor"
               size="xl"
               className="border-2 border-brand-400 shadow-md"
@@ -67,7 +67,7 @@ const TutorDashboard = () => {
             <div>
               <div className="flex items-center gap-2">
                 <h1 className="text-2xl sm:text-3xl font-heading font-extrabold text-white">
-                  {user?.name || 'Mrs. Sandhya Subbaraman'}
+                  {user?.name || 'Mrs. Lakshmi S.'}
                 </h1>
                 <span className="px-2.5 py-0.5 rounded-full bg-purple-500/30 text-purple-200 text-xs font-bold">
                   Faculty Lead

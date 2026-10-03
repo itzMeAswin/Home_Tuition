@@ -15,7 +15,7 @@ const AboutPage = ({ onOpenBookingModal }) => {
             ABOUT OUR INSTITUTION
           </h1>
           <p className="text-stone-300 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
-            Aksharas Academy • Online Home Tution Center is committed to transforming commerce and school education into an engaging, concept-driven pursuit of excellence.
+            Online Home Tution Center is committed to transforming commerce and school education into an engaging, concept-driven pursuit of excellence.
           </p>
         </div>
       </section>
@@ -32,7 +32,7 @@ const AboutPage = ({ onOpenBookingModal }) => {
                 Building Conceptual Foundations That Last a Lifetime
               </h2>
               <p className="text-sm text-stone-600 leading-relaxed">
-                Online Home Tution Center (powered by Aksharas Academy) was established in Trichy with a clear mandate: to dismantle the fear of complex numbers, accounting adjustments, and macro theory. We believe true learning occurs when students understand the 'why' behind each balance sheet entry, not merely memorizing steps for tests.
+                Online Home Tution Center was established in Chennai with a clear mandate: to dismantle the fear of complex numbers, accounting adjustments, and macro theory. We believe true learning occurs when students understand the 'why' behind each balance sheet entry, not merely memorizing steps for tests.
               </p>
               <div className="grid grid-cols-2 gap-4 pt-2">
                 <div className="p-4 rounded-2xl bg-[#FAF8F5] border border-stone-200">
@@ -88,7 +88,7 @@ const AboutPage = ({ onOpenBookingModal }) => {
             <div className="lg:col-span-4 text-center">
               <div className="relative inline-block">
                 <UserAvatar
-                  name="Sandhya Subbaraman"
+                  name="Mrs. Lakshmi S."
                   role="tutor"
                   size="2xl"
                   className="w-48 h-48 sm:w-56 sm:h-56 rounded-3xl mx-auto border-4 border-white shadow-xl text-5xl"
@@ -98,7 +98,7 @@ const AboutPage = ({ onOpenBookingModal }) => {
                 </span>
               </div>
               <h3 className="font-heading font-bold text-xl text-bronze-950 mt-4">
-                Mrs. Sandhya Subbaraman
+                Mrs. Lakshmi S.
               </h3>
               <p className="text-xs text-brand-800 font-bold">
                 Founder & Lead Commerce Educator
@@ -117,10 +117,10 @@ const AboutPage = ({ onOpenBookingModal }) => {
               </h2>
               <div className="space-y-3 text-xs sm:text-sm text-stone-700 leading-relaxed">
                 <p>
-                  Sandhya Subbaraman is an accomplished commerce educator and the visionary Founder of Aksharas Academy, Trichy, known for her ability to blend academic rigor with practical, simplified learning. With a strong foundation in Accountancy, Business Studies, Economics, and Management studies, she has consistently empowered students to achieve academic excellence.
+                  Mrs. Lakshmi S. is an accomplished commerce educator and the lead tutor of Online Home Tution Center, Chennai, known for her ability to blend academic rigor with practical, simplified learning. With a strong foundation in Accountancy, Business Studies, Economics, and Management studies, she has consistently empowered students to achieve academic excellence.
                 </p>
                 <p>
-                  With an impressive academic background including M.Com, M.Phil, MBA, and qualification in the State Eligibility Test (SET), she brings scholarly discipline and analytical depth to her teaching. Before establishing Aksharas Academy, she taught for more than 15 years at esteemed collegiate and high school institutions.
+                  With an impressive academic background including M.Com, M.Phil, MBA, and qualification in the State Eligibility Test (SET), she brings scholarly discipline and analytical depth to her teaching. Before establishing Online Home Tution Center, she taught for more than 15 years at esteemed collegiate and high school institutions.
                 </p>
                 <p>
                   In addition to her institutional teaching role, she has been an active YouTube educator since 2022, extending her reach to a broader student community nationwide by simplifying complex commerce concepts and making quality education accessible beyond traditional classrooms.

@@ -51,7 +51,7 @@ app.get('/api/health', (req, res) => {
   res.json({
     status: 'online',
     institution: 'Online Home Tution Center',
-    poweredBy: 'Aksharas Academy',
+    poweredBy: 'Online Home Tution Center',
     version: '1.0.0',
     timestamp: new Date().toISOString()
   });

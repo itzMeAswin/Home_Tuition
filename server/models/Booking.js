@@ -23,7 +23,7 @@ const bookingSchema = new mongoose.Schema({
     enum: ['Pending', 'Confirmed', 'Completed', 'Cancelled'], 
     default: 'Pending' 
   },
-  assignedTutor: { type: String, default: 'Mrs. Sandhya Subbaraman' },
+  assignedTutor: { type: String, default: 'Mrs. Lakshmi S.' },
   meetingLink: { type: String, default: '' },
   adminNotes: { type: String, default: '' }
 }, { timestamps: true });

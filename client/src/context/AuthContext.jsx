@@ -84,7 +84,7 @@ export const AuthProvider = ({ children }) => {
     const accounts = {
       student: { email: 'student@tutioncenter.com', password: 'student123' },
       parent: { email: 'parent@tutioncenter.com', password: 'parent123' },
-      tutor: { email: 'sandhya@aksharasacademy.com', password: 'tutor123' },
+      tutor: { email: 'tutor@tutioncenter.com', password: 'tutor123' },
       admin: { email: 'admin@tutioncenter.com', password: 'admin123' },
     };
     const creds = accounts[targetRole];

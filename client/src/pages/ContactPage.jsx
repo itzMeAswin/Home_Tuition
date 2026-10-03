@@ -39,7 +39,7 @@ const ContactPage = ({ onOpenBookingModal }) => {
   };
 
   const openWhatsApp = () => {
-    window.open('https://wa.me/919345793979?text=Hello%20Online%20Home%20Tution%20Center,%20I%20would%20like%20to%20inquire%20about%20your%20classes.', '_blank');
+    window.open('https://wa.me/919876543210?text=Hello%20Online%20Home%20Tution%20Center,%20I%20would%20like%20to%20inquire%20about%20your%20classes.', '_blank');
   };
 
   return (
@@ -94,14 +94,14 @@ const ContactPage = ({ onOpenBookingModal }) => {
                   </div>
                   <div>
                     <h4 className="font-bold text-bronze-950">Call Helpline</h4>
-                    <p className="text-stone-600 mt-0.5 font-semibold">+91 93457 93979</p>
+                    <p className="text-stone-600 mt-0.5 font-semibold">+91 98765 43210</p>
                     <span className="text-[11px] text-stone-400">Available 6:00 AM - 9:00 PM IST</span>
                   </div>
                 </a>
 
                 {/* Email */}
                 <a
-                  href="mailto:aksharasacademy@gmail.com"
+                  href="mailto:info@tutioncenter.com"
                   className="flex items-start gap-3.5 p-3.5 rounded-2xl bg-[#FAF8F5] border border-stone-200 hover:border-brand-400 transition"
                 >
                   <div className="w-10 h-10 rounded-xl bg-blue-500/15 text-blue-700 flex items-center justify-center shrink-0">
@@ -109,7 +109,7 @@ const ContactPage = ({ onOpenBookingModal }) => {
                   </div>
                   <div>
                     <h4 className="font-bold text-bronze-950">Direct Email</h4>
-                    <p className="text-stone-600 mt-0.5">aksharasacademy@gmail.com</p>
+                    <p className="text-stone-600 mt-0.5">info@tutioncenter.com</p>
                   </div>
                 </a>
 
@@ -127,8 +127,8 @@ const ContactPage = ({ onOpenBookingModal }) => {
             {/* Embedded Google Map */}
             <div className="bg-white rounded-3xl p-2 shadow-lg border border-stone-200 overflow-hidden h-64">
               <iframe
-                title="Trichy Center Location"
-                src="https://maps.google.com/maps?q=54,+2nd+Street,+Royarthope,+Srirangam,+Trichy&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                title="Academic Center Location"
+                src="https://maps.google.com/maps?q=123,+Academic+Avenue,+Knowledge+Park,+Chennai&t=&z=15&ie=UTF8&iwloc=&output=embed"
                 className="w-full h-full rounded-2xl border-0"
                 allowFullScreen=""
                 loading="lazy"

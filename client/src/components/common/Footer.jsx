@@ -22,13 +22,13 @@ const Footer = () => {
                   Online Home Tution Center
                 </h4>
                 <p className="text-xs text-brand-400 font-semibold tracking-wide uppercase">
-                  Aksharas Academy • Trichy
+                  Personalized Mentoring • Chennai
                 </p>
               </div>
             </div>
 
             <p className="text-sm text-stone-400 leading-relaxed max-w-sm">
-              Empowering students across India with personalized online learning, conceptual clarity in commerce, and exam-oriented mentorship founded by Mrs. Sandhya Subbaraman (SET Qualified).
+              Empowering students across India with personalized online learning, conceptual clarity in commerce, and exam-oriented mentorship founded by Mrs. Lakshmi S. (SET Qualified).
             </p>
 
             <div className="flex flex-wrap gap-2 pt-2">
@@ -123,21 +123,21 @@ const Footer = () => {
               <div className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-brand-400 shrink-0 mt-0.5" />
                 <span>
-                  54, 2nd Street, Royarthope,<br />
-                  Srirangam, Trichy - 620006,<br />
+                  123, Academic Avenue,<br />
+                  Knowledge Park, Chennai - 600001,<br />
                   Tamilnadu, India.
                 </span>
               </div>
               <div className="flex items-center gap-2.5">
                 <Phone className="w-4 h-4 text-brand-400 shrink-0" />
-                <a href="tel:+919345793979" className="hover:text-brand-300 transition font-medium">
-                  +91 93457 93979
+                <a href="tel:+919876543210" className="hover:text-brand-300 transition font-medium">
+                  +91 98765 43210
                 </a>
               </div>
               <div className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-brand-400 shrink-0" />
-                <a href="mailto:aksharasacademy@gmail.com" className="hover:text-brand-300 transition">
-                  aksharasacademy@gmail.com
+                <a href="mailto:info@tutioncenter.com" className="hover:text-brand-300 transition">
+                  info@tutioncenter.com
                 </a>
               </div>
               <div className="flex items-center gap-2.5 text-stone-400">
@@ -150,7 +150,7 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-500 gap-4">
-          <p>© {new Date().getFullYear()} Online Home Tution Center (Aksharas Academy). All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Online Home Tution Center. All rights reserved.</p>
           <div className="flex items-center gap-4">
             <Link to="/about" className="hover:text-stone-300 transition">About Founder</Link>
             <span>•</span>

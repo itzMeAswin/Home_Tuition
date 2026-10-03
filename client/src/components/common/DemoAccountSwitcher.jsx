@@ -84,7 +84,7 @@ const DemoAccountSwitcher = () => {
               >
                 <div className="flex items-center gap-2">
                   <UserCheck className="w-4 h-4 text-purple-600" />
-                  <span>Tutor (Mrs. Sandhya - Founder)</span>
+                  <span>Tutor (Mrs. Lakshmi S. - Founder)</span>
                 </div>
                 {role === 'tutor' && <span className="text-[10px] text-purple-600 font-bold">Active</span>}
               </button>

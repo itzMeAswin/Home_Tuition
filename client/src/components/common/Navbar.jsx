@@ -68,14 +68,14 @@ const Navbar = ({ onOpenBookingModal }) => {
           <div className="flex items-center gap-4 shrink-0 text-stone-300">
             <div className="hidden md:flex items-center gap-1.5 text-stone-400">
               <MapPin className="w-3.5 h-3.5 text-brand-400" />
-              <span>Trichy Center & Online Pan-India</span>
+              <span>Academic Center & Online Pan-India</span>
             </div>
             <a
-              href="tel:+919345793979"
+              href="tel:+919876543210"
               className="flex items-center gap-1.5 text-brand-300 hover:text-white font-semibold transition"
             >
               <Phone className="w-3.5 h-3.5 text-brand-400" />
-              <span>+91 93457 93979</span>
+              <span>+91 98765 43210</span>
             </a>
           </div>
         </div>
@@ -105,7 +105,7 @@ const Navbar = ({ onOpenBookingModal }) => {
                   Online Home Tution Center
                 </span>
                 <span className="text-[10px] sm:text-xs font-bold text-brand-700 tracking-wider uppercase">
-                  Aksharas Academy • Trichy
+                  Personalized Tutoring • Chennai
                 </span>
               </div>
             </Link>
@@ -283,11 +283,11 @@ const Navbar = ({ onOpenBookingModal }) => {
               )}
 
               <a
-                href="tel:+919345793979"
+                href="tel:+919876543210"
                 className="py-2 text-center text-xs font-semibold text-stone-600 flex items-center justify-center gap-1.5"
               >
                 <Phone className="w-3.5 h-3.5 text-brand-600" />
-                <span>Direct Faculty Helpline: +91 93457 93979</span>
+                <span>Direct Faculty Helpline: +91 98765 43210</span>
               </a>
             </div>
           </div>

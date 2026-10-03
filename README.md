@@ -1,6 +1,4 @@
-# Online Home Tution Center
-
-> **Powered by Aksharas Academy • Learn Beyond Limits**  
+> **Learn Beyond Limits**  
 > Premium Educational MERN Stack Web Application & Student Engagement Platform
 
 ---
@@ -10,7 +8,7 @@
 **Online Home Tution Center** is a production-quality, responsive, and interactive educational platform designed for our client institution located in **Trichy, Tamil Nadu**.
 
 The platform is engineered to fulfill three core institutional objectives:
-1. **Institutional Marketing & Promotion:** Showcase the institution's authentic track record, Founder Mrs. Sandhya Subbaraman's profile, CBSE board results (Centums, 90%+), verified student testimonials, and drive high-conversion **Free Demo Class** bookings.
+1. **Institutional Marketing & Promotion:** Showcase the institution's authentic track record, Founder Mrs. Lakshmi S.'s profile, CBSE board results (Centums, 90%+), verified student testimonials, and drive high-conversion **Free Demo Class** bookings.
 2. **Student Engagement & Gamification:** A signature **"MY LEARNING SPACE"** portal with daily challenges, streak flames, timed topic-wise quizzes with instant step-by-step explanations, MongoDB-backed achievement badges, and a friendly leaderboard.
 3. **Research-Driven EdTech Solutions:** Directly resolves the two critical research barriers in online tutoring:
    - **Barrier 1: Insufficient Pedagogical Training** ➔ **Teacher Development Hub** (active learning modules, interactive lesson planner with database saving, and teaching readiness diagnostic).
@@ -20,7 +18,7 @@ The platform is engineered to fulfill three core institutional objectives:
 
 ## 🎨 Branding & Color System
 
-The visual identity is anchored around the client's official **Aksharas Academy Logo (`/logo.png`)**:
+The visual identity is anchored around the client's official **Institution Logo (`/logo.png`)**:
 - **Primary Brand Gold:** `#C29B1A` / `#D4AF37` / `#B8860B` (Lotus gold)
 - **Deep Bronze Contrast:** `#2A231C` / `#1C1712` (Espresso dark coffee from logo typography)
 - **Background Parchment:** `#FAF8F5` / `#F5EFE6` (Warm, premium pearl cream)
@@ -48,7 +46,7 @@ The visual identity is anchored around the client's official **Aksharas Academy 
 - **Why Choose Us:** 6 key pillars (Personalized Attention, Experienced Faculty, Flexible Schedules, Student-Centered Pedagogy, Interactive Learning, Progress Monitoring).
 - **Verified Results (2019–2025):** Real CBSE Board examination data showing Centums (100/100 in Accountancy/Economics), 90%+ scores, and 80–90% bands.
 - **Authentic Testimonial Carousel:** Real student testimonials with scores and photos (`/p1.png`–`/p10.png`).
-- **Institutional Coordinates:** 54, 2nd Street, Royarthope, Srirangam, Trichy - 620006; Phone: `+91 9345793979`; Email: `aksharasacademy@gmail.com`; Embedded Google Map; One-click WhatsApp chat.
+- **Institutional Coordinates:** 54, 2nd Street, Royarthope, Srirangam, Trichy - 620006; Phone: `+91 9345793979`; Email: `info@tutioncenter.com`; Embedded Google Map; One-click WhatsApp chat.
 
 ### 2. Signature Feature: "MY LEARNING SPACE"
 - **Student Dashboard:** Daily learning goal progress ring, streak counter, upcoming live classes with direct Google Meet links.
@@ -111,7 +109,7 @@ You can use the **1-Click Demo Switcher** pill at the bottom-left of the applica
 |---|---|---|
 | **Student** | `student@tutioncenter.com` | `student123` |
 | **Parent** | `parent@tutioncenter.com` | `parent123` |
-| **Tutor (Founder)** | `sandhya@aksharasacademy.com` | `tutor123` |
+| **Tutor (Founder)** | `tutor@tutioncenter.com` | `tutor123` |
 | **Admin** | `admin@tutioncenter.com` | `admin123` |
 
 ---
@@ -189,9 +187,9 @@ npm run build    # Generates optimized production build in client/dist
 
 ## 🏛️ Institutional Contact Details
 
-- **Institution:** Online Home Tution Center (Aksharas Academy)
-- **Founder:** Mrs. Sandhya Subbaraman, M.Com, M.Phil, MBA, SET Qualified
+- **Institution:** Online Home Tution Center
+- **Founder:** Mrs. Lakshmi S., M.Com, M.Phil, MBA, SET Qualified
 - **Address:** 54, 2nd Street, Royarthope, Srirangam, Trichy - 620006, Tamil Nadu, India
 - **Phone:** +91 93457 93979
-- **Email:** aksharasacademy@gmail.com
+- **Email:** info@tutioncenter.com
 - **Operating Hours:** Monday – Sunday, 6:00 AM – 9:00 PM IST

@@ -30,7 +30,7 @@ const ParentDashboard = () => {
 
   const handleScheduleDiscussion = () => {
     setDiscussionBooked(true);
-    addToast('Discussion request sent to Mrs. Sandhya Subbaraman!', 'success');
+    addToast('Discussion request sent to Mrs. Lakshmi S.!', 'success');
   };
 
   return (

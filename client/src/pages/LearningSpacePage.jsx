@@ -337,7 +337,7 @@ const LearningSpacePage = () => {
                   <h3 className="font-heading font-bold text-base text-bronze-950 flex items-center gap-2">
                     <BookOpen className="w-4 h-4 text-purple-600" /> Upcoming Live Classes & Schedule
                   </h3>
-                  <span className="text-xs text-stone-500">Aksharas Live Portal</span>
+                  <span className="text-xs text-stone-500">Live Learning Portal</span>
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">

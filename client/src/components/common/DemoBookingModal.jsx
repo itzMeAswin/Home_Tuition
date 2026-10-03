@@ -38,7 +38,7 @@ const DemoBookingModal = ({ isOpen, onClose, preselectedSubject = '', preselecte
     try {
       const res = await api.post('/bookings', {
         ...formData,
-        assignedTutor: preselectedTutor || 'Mrs. Sandhya Subbaraman',
+        assignedTutor: preselectedTutor || 'Mrs. Lakshmi S.',
       });
 
       setConfirmedBooking(res.data.booking);

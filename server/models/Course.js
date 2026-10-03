@@ -18,7 +18,7 @@ const courseSchema = new mongoose.Schema({
   duration: { type: String, default: 'Full Academic Year / Crash Course' },
   sessionsPerWeek: { type: String, default: '3 - 5 Sessions' },
   batchSize: { type: String, default: '1-on-1 Personalized & Small Groups (Max 5)' },
-  tutorName: { type: String, default: 'Mrs. Sandhya Subbaraman' },
+  tutorName: { type: String, default: 'Mrs. Lakshmi S.' },
   image: { type: String, default: '' },
   isFeatured: { type: Boolean, default: true },
   enrollmentOpen: { type: Boolean, default: true },

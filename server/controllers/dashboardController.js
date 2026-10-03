@@ -41,9 +41,9 @@ const getStudentDashboard = async (req, res) => {
 
     // Demo upcoming classes
     const upcomingClasses = [
-      { id: 1, subject: 'Accountancy', topic: 'Partnership Fundamentals & Goodwill', date: 'Tomorrow, 5:30 PM', tutor: 'Mrs. Sandhya Subbaraman', link: 'https://meet.google.com/demo-tution' },
-      { id: 2, subject: 'Economics', topic: 'National Income Measurement & Real GDP', date: 'Friday, 6:00 PM', tutor: 'Mrs. Sandhya Subbaraman', link: 'https://meet.google.com/demo-tution' },
-      { id: 3, subject: 'Business Studies', topic: 'Financial Markets & Stock Exchange', date: 'Saturday, 4:00 PM', tutor: 'Mrs. Sandhya Subbaraman', link: 'https://meet.google.com/demo-tution' }
+      { id: 1, subject: 'Accountancy', topic: 'Partnership Fundamentals & Goodwill', date: 'Tomorrow, 5:30 PM', tutor: 'Mrs. Lakshmi S.', link: 'https://meet.google.com/demo-tution' },
+      { id: 2, subject: 'Economics', topic: 'National Income Measurement & Real GDP', date: 'Friday, 6:00 PM', tutor: 'Mrs. Lakshmi S.', link: 'https://meet.google.com/demo-tution' },
+      { id: 3, subject: 'Business Studies', topic: 'Financial Markets & Stock Exchange', date: 'Saturday, 4:00 PM', tutor: 'Mrs. Lakshmi S.', link: 'https://meet.google.com/demo-tution' }
     ];
 
     res.json({
@@ -93,13 +93,13 @@ const getParentDashboard = async (req, res) => {
 
     const tutorNotes = [
       {
-        tutorName: 'Mrs. Sandhya Subbaraman',
+        tutorName: 'Mrs. Lakshmi S.',
         date: '28 Sep 2026',
         subject: 'Accountancy',
         comment: 'Consistently demonstrates deep interest in Partnership Accounts. Homework is submitted on time with great neatness.'
       },
       {
-        tutorName: 'Mrs. Sandhya Subbaraman',
+        tutorName: 'Mrs. Lakshmi S.',
         date: '20 Sep 2026',
         subject: 'Economics',
         comment: 'Great participation during live doubt resolution. Recommended 2 additional practice sums for National Income formula.'
