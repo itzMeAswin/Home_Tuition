@@ -88,7 +88,7 @@ const DemoBookingModal = ({ isOpen, onClose, preselectedSubject = '', preselecte
             </span>
             <span className="text-white/60 text-xs">No Credit Card Required</span>
           </div>
-          <h3 className="text-xl sm:text-2xl md:text-3xl font-heading font-bold">Book a Free Live Demo Class</h3>
+          <h3 className="text-xl sm:text-2xl md:text-3xl font-heading font-bold text-white">Book a Free Live Demo Class</h3>
           <p className="text-stone-300 text-xs sm:text-sm mt-1">
             Experience our interactive teaching methodology, personalized concept breakdown, and expert guidance.
           </p>
