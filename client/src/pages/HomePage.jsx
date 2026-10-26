@@ -78,10 +78,10 @@ const HomePage = ({ onOpenBookingModal }) => {
       {/* ========================================================= */}
       {/* 1. HERO SECTION — PROMOTE INSTITUTION                     */}
       {/* ========================================================= */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-[#FAF8F5] via-white to-[#F9F4E8] pt-12 pb-20 lg:pt-20 lg:pb-28 border-b border-brand-200/50">
+      <section className="relative overflow-hidden bg-gradient-to-b from-[#F8FAFC] via-white to-[#EFF6FF] pt-12 pb-20 lg:pt-20 lg:pb-28 border-b border-brand-200/50">
         {/* Decorative Blurred Gradients */}
-        <div className="absolute top-0 right-0 -mr-24 -mt-24 w-96 h-96 rounded-full bg-brand-300/15 blur-3xl pointer-events-none"></div>
-        <div className="absolute bottom-0 left-0 -ml-24 -mb-24 w-96 h-96 rounded-full bg-amber-400/10 blur-3xl pointer-events-none"></div>
+        <div className="absolute top-0 right-0 -mr-24 -mt-24 w-96 h-96 rounded-full bg-brand-400/10 blur-3xl pointer-events-none"></div>
+        <div className="absolute bottom-0 left-0 -ml-24 -mb-24 w-96 h-96 rounded-full bg-cyan-400/10 blur-3xl pointer-events-none"></div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
@@ -95,7 +95,7 @@ const HomePage = ({ onOpenBookingModal }) => {
               {/* Institution Badge */}
               <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-100/90 border border-brand-300/60 text-brand-950 text-xs sm:text-sm font-bold shadow-xs">
                 <span className="w-2 h-2 rounded-full bg-brand-600 animate-ping"></span>
-                <span>Online Home Tution Center • Excellence in Education</span>
+                <span>Home Tuition • Excellence in Education</span>
                 <span className="text-brand-700 font-extrabold hidden sm:inline">| Chennai</span>
               </div>
 
@@ -114,9 +114,9 @@ const HomePage = ({ onOpenBookingModal }) => {
               <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
                 <Link
                   to="/tutor-matching"
-                  className="w-full sm:w-auto px-8 py-4 rounded-2xl bg-gradient-to-r from-brand-600 via-brand-500 to-amber-600 hover:from-brand-700 hover:to-amber-700 text-white font-bold text-sm sm:text-base shadow-xl shadow-brand-500/25 flex items-center justify-center gap-2.5 transition-all transform hover:-translate-y-0.5 cursor-pointer"
+                  className="w-full sm:w-auto px-8 py-4 rounded-2xl bg-gradient-to-r from-brand-600 via-brand-500 to-indigo-600 hover:from-brand-700 hover:to-indigo-700 text-white font-bold text-sm sm:text-base shadow-xl shadow-brand-500/25 flex items-center justify-center gap-2.5 transition-all transform hover:-translate-y-0.5 cursor-pointer"
                 >
-                  <BrainCircuit className="w-5 h-5 text-amber-200" />
+                  <BrainCircuit className="w-5 h-5 text-cyan-200" />
                   <span>Find Your Perfect Tutor</span>
                 </Link>
 
@@ -157,7 +157,7 @@ const HomePage = ({ onOpenBookingModal }) => {
             >
               <div className="relative mx-auto max-w-md lg:max-w-none">
                 {/* Glow Backdrop */}
-                <div className="absolute inset-0 bg-gradient-to-tr from-brand-400/20 to-amber-300/30 rounded-3xl blur-2xl transform rotate-2"></div>
+                <div className="absolute inset-0 bg-gradient-to-tr from-brand-400/20 to-cyan-300/20 rounded-3xl blur-2xl transform rotate-2"></div>
 
                 {/* Primary Feature Card */}
                 <div className="relative bg-white rounded-3xl p-6 sm:p-7 shadow-2xl border border-brand-200/90 space-y-5">
@@ -198,9 +198,9 @@ const HomePage = ({ onOpenBookingModal }) => {
                       <p className="text-[11px] text-stone-500">CBSE Accountancy Boards</p>
                     </div>
 
-                    <div className="p-3.5 rounded-2xl bg-amber-50/70 border border-amber-200/60">
-                      <div className="flex items-center gap-1.5 text-amber-800 text-xs font-bold mb-1">
-                        <Flame className="w-4 h-4 text-amber-600" />
+                    <div className="p-3.5 rounded-2xl bg-cyan-50/70 border border-cyan-200/60">
+                      <div className="flex items-center gap-1.5 text-cyan-800 text-xs font-bold mb-1">
+                        <Flame className="w-4 h-4 text-cyan-600" />
                         <span>Interactive Space</span>
                       </div>
                       <p className="text-xl font-heading font-black text-bronze-950">Active Quizzes</p>
@@ -242,31 +242,31 @@ const HomePage = ({ onOpenBookingModal }) => {
       {/* ========================================================= */}
       {/* 2. INSTITUTIONAL HIGHLIGHTS (STATISTICS BAR)              */}
       {/* ========================================================= */}
-      <section className="py-12 bg-white border-b border-stone-200">
+      <section className="py-10 sm:py-12 bg-white border-b border-stone-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center">
-            <div className="p-5 rounded-2xl bg-[#FAF8F5] border border-brand-200/60 shadow-xs hover:border-brand-400 transition-all">
-              <p className="text-3xl sm:text-4xl font-heading font-black text-brand-700">500+</p>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6 text-center">
+            <div className="p-4 sm:p-5 rounded-2xl bg-[#F8FAFC] border border-brand-200/60 shadow-xs hover:border-brand-400 transition-all">
+              <p className="text-2xl sm:text-4xl font-heading font-black text-brand-700">500+</p>
               <p className="text-xs sm:text-sm font-bold text-bronze-950 mt-1">Students Guided</p>
-              <p className="text-[11px] text-stone-500 mt-0.5">Across CBSE & Professional Exams</p>
+              <p className="text-[10px] sm:text-[11px] text-stone-500 mt-0.5 truncate sm:text-clip">Across CBSE & Professional Exams</p>
             </div>
 
-            <div className="p-5 rounded-2xl bg-[#FAF8F5] border border-brand-200/60 shadow-xs hover:border-brand-400 transition-all">
-              <p className="text-3xl sm:text-4xl font-heading font-black text-brand-700">25+</p>
+            <div className="p-4 sm:p-5 rounded-2xl bg-[#F8FAFC] border border-brand-200/60 shadow-xs hover:border-brand-400 transition-all">
+              <p className="text-2xl sm:text-4xl font-heading font-black text-brand-700">25+</p>
               <p className="text-xs sm:text-sm font-bold text-bronze-950 mt-1">Expert Tutors</p>
-              <p className="text-[11px] text-stone-500 mt-0.5">Pedagogically Trained Faculty</p>
+              <p className="text-[10px] sm:text-[11px] text-stone-500 mt-0.5 truncate sm:text-clip">Pedagogically Trained Faculty</p>
             </div>
 
-            <div className="p-5 rounded-2xl bg-[#FAF8F5] border border-brand-200/60 shadow-xs hover:border-brand-400 transition-all">
-              <p className="text-3xl sm:text-4xl font-heading font-black text-brand-700">15+</p>
+            <div className="p-4 sm:p-5 rounded-2xl bg-[#F8FAFC] border border-brand-200/60 shadow-xs hover:border-brand-400 transition-all">
+              <p className="text-2xl sm:text-4xl font-heading font-black text-brand-700">15+</p>
               <p className="text-xs sm:text-sm font-bold text-bronze-950 mt-1">Subjects Available</p>
-              <p className="text-[11px] text-stone-500 mt-0.5">Commerce, Science & Foundations</p>
+              <p className="text-[10px] sm:text-[11px] text-stone-500 mt-0.5 truncate sm:text-clip">Commerce, Science & Foundations</p>
             </div>
 
-            <div className="p-5 rounded-2xl bg-[#FAF8F5] border border-brand-200/60 shadow-xs hover:border-brand-400 transition-all">
-              <p className="text-3xl sm:text-4xl font-heading font-black text-brand-700">12,000+</p>
+            <div className="p-4 sm:p-5 rounded-2xl bg-[#F8FAFC] border border-brand-200/60 shadow-xs hover:border-brand-400 transition-all">
+              <p className="text-2xl sm:text-4xl font-heading font-black text-brand-700">12,000+</p>
               <p className="text-xs sm:text-sm font-bold text-bronze-950 mt-1">Learning Hours</p>
-              <p className="text-[11px] text-stone-500 mt-0.5">Live Interactive Mentorship</p>
+              <p className="text-[10px] sm:text-[11px] text-stone-500 mt-0.5 truncate sm:text-clip">Live Interactive Mentorship</p>
             </div>
           </div>
         </div>
@@ -275,14 +275,14 @@ const HomePage = ({ onOpenBookingModal }) => {
       {/* ========================================================= */}
       {/* 3. WHY CHOOSE US? (6 CORE PILLARS)                        */}
       {/* ========================================================= */}
-      <section className="py-20 sm:py-24 bg-[#FAF8F5]">
+      <section className="py-20 sm:py-24 bg-[#F8FAFC]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
             <span className="px-3.5 py-1 rounded-full bg-brand-100 text-brand-900 text-xs font-bold uppercase tracking-wider">
               Educational Excellence
             </span>
             <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-bronze-950">
-              Why Choose Online Home Tution Center?
+              Why Choose Home Tuition?
             </h2>
             <p className="text-stone-600 text-sm sm:text-base leading-relaxed">
               A student-centered ecosystem blending rigorous pedagogy, technological ease, and personalized attention.
@@ -306,7 +306,7 @@ const HomePage = ({ onOpenBookingModal }) => {
             {/* Feature 2 */}
             <div className="p-7 rounded-3xl bg-white border border-stone-200/80 hover:border-brand-400 transition-all hover:shadow-xl group flex flex-col justify-between">
               <div>
-                <div className="w-12 h-12 rounded-2xl bg-amber-500/15 text-amber-700 flex items-center justify-center mb-5 group-hover:bg-amber-500 group-hover:text-white transition-colors">
+                <div className="w-12 h-12 rounded-2xl bg-indigo-500/15 text-indigo-700 flex items-center justify-center mb-5 group-hover:bg-indigo-600 group-hover:text-white transition-colors">
                   <Award className="w-6 h-6" />
                 </div>
                 <h3 className="text-lg font-heading font-bold text-bronze-950 mb-2">Experienced Tutors</h3>
@@ -383,7 +383,7 @@ const HomePage = ({ onOpenBookingModal }) => {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
               <div className="lg:col-span-7 space-y-5">
                 <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-500/20 border border-brand-400/40 text-brand-300 text-xs font-bold uppercase tracking-wider">
-                  <Flame className="w-3.5 h-3.5 text-amber-400" /> Signature Feature
+                  <Flame className="w-3.5 h-3.5 text-cyan-400" /> Signature Feature
                 </div>
 
                 <h2 className="text-3xl sm:text-4xl font-heading font-extrabold tracking-tight">
@@ -415,7 +415,7 @@ const HomePage = ({ onOpenBookingModal }) => {
                 <div className="pt-3">
                   <Link
                     to="/learning-space"
-                    className="inline-flex items-center gap-2 px-7 py-3.5 rounded-2xl bg-gradient-to-r from-brand-500 to-amber-500 hover:from-brand-600 hover:to-amber-600 text-white font-bold text-sm shadow-lg shadow-brand-500/30 transition transform hover:-translate-y-0.5 cursor-pointer"
+                    className="inline-flex items-center gap-2 px-7 py-3.5 rounded-2xl bg-gradient-to-r from-brand-600 via-brand-500 to-indigo-600 hover:from-brand-700 hover:to-indigo-700 text-white font-bold text-sm shadow-lg shadow-brand-500/30 transition transform hover:-translate-y-0.5 cursor-pointer"
                   >
                     <span>Enter Student Learning Zone</span>
                     <ArrowRight className="w-4 h-4" />
@@ -434,7 +434,7 @@ const HomePage = ({ onOpenBookingModal }) => {
                         <p className="text-[10px] text-brand-300">Class 12 • Commerce Star</p>
                       </div>
                     </div>
-                    <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-amber-500/20 text-amber-300 text-xs font-bold">
+                    <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-brand-500/20 text-brand-300 text-xs font-bold">
                       <Flame className="w-3.5 h-3.5 text-amber-400" /> 5-Day Streak
                     </div>
                   </div>
@@ -442,10 +442,10 @@ const HomePage = ({ onOpenBookingModal }) => {
                   <div className="space-y-2">
                     <div className="flex justify-between text-xs text-stone-300">
                       <span>Daily Learning Goal</span>
-                      <span className="font-bold text-brand-300">67% Completed</span>
+                      <span className="font-bold text-cyan-300">67% Completed</span>
                     </div>
                     <div className="w-full bg-white/10 h-2 rounded-full overflow-hidden">
-                      <div className="bg-gradient-to-r from-brand-400 to-amber-400 h-full w-2/3 rounded-full"></div>
+                      <div className="bg-gradient-to-r from-cyan-400 to-brand-500 h-full w-2/3 rounded-full"></div>
                     </div>
                   </div>
 
@@ -473,7 +473,7 @@ const HomePage = ({ onOpenBookingModal }) => {
       {/* ========================================================= */}
       {/* 5. FEATURED PROGRAMS & SUBJECT EXPLORER                   */}
       {/* ========================================================= */}
-      <section className="py-20 sm:py-24 bg-[#FAF8F5] border-y border-stone-200/80">
+      <section className="py-20 sm:py-24 bg-[#F8FAFC] border-y border-stone-200/80">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-4">
             <div className="space-y-2">
@@ -561,9 +561,9 @@ const HomePage = ({ onOpenBookingModal }) => {
       {/* ========================================================= */}
       <section className="py-20 sm:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-gradient-to-r from-brand-50 via-[#FAF8F5] to-amber-50 rounded-3xl p-8 sm:p-12 border border-brand-200/80 flex flex-col lg:flex-row items-center justify-between gap-8 shadow-sm">
+          <div className="bg-gradient-to-r from-brand-50 via-white to-indigo-50/80 rounded-3xl p-8 sm:p-12 border border-brand-200/80 flex flex-col lg:flex-row items-center justify-between gap-8 shadow-sm">
             <div className="space-y-3 max-w-2xl">
-              <span className="px-3.5 py-1 rounded-full bg-brand-200/80 text-brand-950 text-xs font-bold uppercase tracking-wider inline-block">
+              <span className="px-3.5 py-1 rounded-full bg-brand-100 text-brand-950 text-xs font-bold uppercase tracking-wider inline-block border border-brand-200">
                 Intelligent Matching Engine
               </span>
               <h2 className="text-3xl font-heading font-extrabold text-bronze-950">
@@ -575,9 +575,9 @@ const HomePage = ({ onOpenBookingModal }) => {
             </div>
             <Link
               to="/tutor-matching"
-              className="px-8 py-4 rounded-2xl bg-gradient-to-r from-brand-600 to-amber-600 hover:from-brand-700 hover:to-amber-700 text-white font-bold text-sm shadow-xl shadow-brand-500/20 shrink-0 flex items-center gap-2 transition transform hover:-translate-y-0.5 cursor-pointer"
+              className="px-8 py-4 rounded-2xl bg-gradient-to-r from-brand-600 via-brand-500 to-indigo-600 hover:from-brand-700 hover:to-indigo-700 text-white font-bold text-sm shadow-xl shadow-brand-500/20 shrink-0 flex items-center gap-2 transition transform hover:-translate-y-0.5 cursor-pointer"
             >
-              <BrainCircuit className="w-5 h-5" />
+              <BrainCircuit className="w-5 h-5 text-cyan-200" />
               <span>Launch Smart Tutor Matcher</span>
             </Link>
           </div>
@@ -587,7 +587,7 @@ const HomePage = ({ onOpenBookingModal }) => {
       {/* ========================================================= */}
       {/* 7. RESEARCH BARRIERS SOLVED: TEACHER HUB & DIGITAL LITERACY*/}
       {/* ========================================================= */}
-      <section className="py-20 sm:py-24 bg-[#FAF8F5] border-t border-stone-200">
+      <section className="py-20 sm:py-24 bg-[#F8FAFC] border-t border-stone-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-14 space-y-3">
             <span className="px-3.5 py-1 rounded-full bg-emerald-100 text-emerald-900 text-xs font-bold uppercase tracking-wider">
@@ -706,44 +706,44 @@ const HomePage = ({ onOpenBookingModal }) => {
 
           {testimonials.length > 0 && (
             <div className="max-w-4xl mx-auto relative">
-              <div className="bg-[#FAF8F5] rounded-3xl p-8 sm:p-12 shadow-xl border border-brand-200/90 relative">
+              <div className="bg-[#F8FAFC] rounded-3xl p-8 sm:p-12 shadow-xl border border-brand-200/90 relative">
                 {/* Arrow navigation buttons */}
                 <button
                   onClick={handlePrevTestimonial}
-                  className="absolute left-3 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white border border-stone-200 text-stone-600 hover:text-brand-700 shadow-md transition cursor-pointer hidden sm:block"
+                  className="absolute left-3 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white border border-stone-200 text-stone-600 hover:text-brand-700 shadow-md transition cursor-pointer hidden md:block"
                   aria-label="Previous testimonial"
                 >
                   <ChevronLeft className="w-5 h-5" />
                 </button>
                 <button
-                  onClick={handleNextNextTestimonial => handleNextTestimonial()}
-                  className="absolute right-3 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white border border-stone-200 text-stone-600 hover:text-brand-700 shadow-md transition cursor-pointer hidden sm:block"
+                  onClick={handleNextTestimonial}
+                  className="absolute right-3 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white border border-stone-200 text-stone-600 hover:text-brand-700 shadow-md transition cursor-pointer hidden md:block"
                   aria-label="Next testimonial"
                 >
                   <ChevronRight className="w-5 h-5" />
                 </button>
 
-                <div className="flex flex-col md:flex-row items-center md:items-start gap-8 px-4 sm:px-8">
+                <div className="flex flex-col md:flex-row items-center md:items-start gap-6 sm:gap-8 px-2 sm:px-8">
                   <div className="shrink-0 text-center">
                     <UserAvatar
                       name={testimonials[activeTestimonialIdx].name}
                       role="student"
                       size="2xl"
-                      className="mx-auto border-4 border-white shadow-md text-3xl"
+                      className="mx-auto border-4 border-white shadow-md text-2xl sm:text-3xl"
                     />
-                    <div className="mt-3 px-3 py-1 rounded-full bg-brand-200/80 text-brand-950 text-xs font-extrabold">
+                    <div className="mt-3 px-3 py-1 rounded-full bg-brand-200/80 text-brand-950 text-xs font-extrabold inline-block">
                       {testimonials[activeTestimonialIdx].score || '90%+ Score'}
                     </div>
                   </div>
 
-                  <div className="space-y-4 text-center md:text-left flex-1">
+                  <div className="space-y-4 text-center md:text-left flex-1 min-w-0">
                     <div className="flex items-center justify-center md:justify-start gap-1 text-amber-500">
                       {[...Array(5)].map((_, i) => (
                         <Star key={i} className="w-4 h-4 fill-current" />
                       ))}
                     </div>
 
-                    <blockquote className="text-bronze-950 text-base sm:text-lg italic leading-relaxed">
+                    <blockquote className="text-bronze-950 text-sm sm:text-base md:text-lg italic leading-relaxed break-words">
                       "{testimonials[activeTestimonialIdx].quote}"
                     </blockquote>
 
@@ -761,17 +761,34 @@ const HomePage = ({ onOpenBookingModal }) => {
                   </div>
                 </div>
 
-                {/* Carousel Dots */}
-                <div className="flex items-center justify-center gap-2 mt-8 pt-6 border-t border-stone-200/60">
-                  {testimonials.map((_, idx) => (
-                    <button
-                      key={idx}
-                      onClick={() => setActiveTestimonialIdx(idx)}
-                      className={`h-2.5 rounded-full transition-all cursor-pointer ${
-                        activeTestimonialIdx === idx ? 'w-8 bg-brand-600' : 'w-2.5 bg-stone-300'
-                      }`}
-                    />
-                  ))}
+                {/* Mobile & Desktop Controls */}
+                <div className="flex items-center justify-between sm:justify-center gap-4 mt-8 pt-6 border-t border-stone-200/60">
+                  <button
+                    onClick={handlePrevTestimonial}
+                    className="md:hidden p-2 rounded-xl bg-white border border-stone-200 text-stone-700 shadow-xs cursor-pointer flex items-center gap-1 text-xs font-semibold"
+                  >
+                    <ChevronLeft className="w-4 h-4" /> Prev
+                  </button>
+
+                  <div className="flex items-center justify-center gap-2">
+                    {testimonials.map((_, idx) => (
+                      <button
+                        key={idx}
+                        onClick={() => setActiveTestimonialIdx(idx)}
+                        className={`h-2.5 rounded-full transition-all cursor-pointer ${
+                          activeTestimonialIdx === idx ? 'w-8 bg-brand-600' : 'w-2.5 bg-stone-300'
+                        }`}
+                        aria-label={`Go to slide ${idx + 1}`}
+                      />
+                    ))}
+                  </div>
+
+                  <button
+                    onClick={handleNextTestimonial}
+                    className="md:hidden p-2 rounded-xl bg-white border border-stone-200 text-stone-700 shadow-xs cursor-pointer flex items-center gap-1 text-xs font-semibold"
+                  >
+                    Next <ChevronRight className="w-4 h-4" />
+                  </button>
                 </div>
               </div>
             </div>
@@ -793,7 +810,7 @@ const HomePage = ({ onOpenBookingModal }) => {
       {/* ========================================================= */}
       {/* 9. FREQUENTLY ASKED QUESTIONS (FAQ)                       */}
       {/* ========================================================= */}
-      <section className="py-20 sm:py-24 bg-[#FAF8F5] border-t border-stone-200">
+      <section className="py-20 sm:py-24 bg-[#F8FAFC] border-t border-stone-200">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 space-y-2">
             <span className="px-3 py-1 rounded-full bg-stone-200/80 text-stone-800 text-xs font-bold uppercase tracking-wider">
@@ -824,7 +841,7 @@ const HomePage = ({ onOpenBookingModal }) => {
                     )}
                   </button>
                   {isOpen && (
-                    <div className="px-5 pb-5 text-stone-600 text-sm leading-relaxed border-t border-stone-100 bg-[#FAF8F5]/60">
+                    <div className="px-5 pb-5 text-stone-600 text-sm leading-relaxed border-t border-stone-100 bg-[#F8FAFC]/60">
                       {faq.a}
                     </div>
                   )}
@@ -841,12 +858,12 @@ const HomePage = ({ onOpenBookingModal }) => {
       <section className="py-20 sm:py-24 bg-gradient-to-r from-bronze-950 via-bronze-900 to-brand-950 text-white relative overflow-hidden">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6 relative z-10">
           <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-brand-500/25 border border-brand-400/40 text-brand-300 text-xs font-bold uppercase tracking-wider">
-            <Sparkles className="w-4 h-4 text-amber-400" /> Start Your Journey Today
+            <Sparkles className="w-4 h-4 text-cyan-300" /> Start Your Journey Today
           </span>
 
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-black tracking-tight leading-tight">
             Give Your Child the Learning Experience<br />
-            <span className="text-brand-400">They Deserve.</span>
+            <span className="gold-text-gradient">They Deserve.</span>
           </h2>
 
           <p className="text-stone-300 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
@@ -856,9 +873,9 @@ const HomePage = ({ onOpenBookingModal }) => {
           <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
             <button
               onClick={onOpenBookingModal}
-              className="w-full sm:w-auto px-9 py-4 rounded-2xl bg-gradient-to-r from-brand-500 via-amber-500 to-brand-600 hover:from-brand-600 hover:to-amber-600 text-white font-extrabold text-sm sm:text-base shadow-xl shadow-brand-500/30 flex items-center justify-center gap-2.5 transition-all transform hover:-translate-y-0.5 cursor-pointer"
+              className="w-full sm:w-auto px-9 py-4 rounded-2xl bg-gradient-to-r from-brand-600 via-brand-500 to-indigo-600 hover:from-brand-700 hover:to-indigo-700 text-white font-extrabold text-sm sm:text-base shadow-xl shadow-brand-500/30 flex items-center justify-center gap-2.5 transition-all transform hover:-translate-y-0.5 cursor-pointer"
             >
-              <Sparkles className="w-5 h-5 text-amber-200" />
+              <Sparkles className="w-5 h-5 text-cyan-200" />
               <span>Book a Free Demo Class</span>
             </button>
 
@@ -876,3 +893,4 @@ const HomePage = ({ onOpenBookingModal }) => {
 };
 
 export default HomePage;
+

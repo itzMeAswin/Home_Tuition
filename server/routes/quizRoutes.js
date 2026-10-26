@@ -21,6 +21,7 @@ const optionalAuth = async (req, res, next) => {
 
 router.get('/', getQuizzes);
 router.get('/:id', getQuizById);
+router.post('/submit', optionalAuth, submitQuiz);
 router.post('/:id/submit', optionalAuth, submitQuiz);
 router.post('/', protect, authorize('admin', 'tutor'), createQuiz);
 

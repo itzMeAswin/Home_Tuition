@@ -123,7 +123,7 @@ You can use the **1-Click Demo Switcher** pill at the bottom-left of the applica
 
 ### 1. Clone & Project Directory
 ```powershell
-cd C:\Aswin\tution_web
+cd C:\Aswin\Home_Tuition
 ```
 
 ### 2. Backend Setup
@@ -137,9 +137,9 @@ npm start        # Starts Express server on port 5000
 ### 3. Frontend Setup
 In a new terminal:
 ```powershell
-cd C:\Aswin\tution_web\client
+cd C:\Aswin\Home_Tuition\client
 npm install
-npm run dev      # Starts Vite dev server (http://localhost:5173 or http://localhost:5174)
+npm run dev      # Starts Vite dev server (http://localhost:5173)
 ```
 
 ### 4. Build for Production
@@ -170,7 +170,9 @@ npm run build    # Generates optimized production build in client/dist
 | `/api/quizzes/:id` | GET | Get quiz questions & timer |
 | `/api/quizzes/:id/submit` | POST | Grade quiz, topic analysis, award points |
 | `/api/challenges/today` | GET | Get today's daily learning challenge |
+| `/api/challenges/leaderboard` | GET | Public weekly student leaderboard |
 | `/api/challenges/submit` | POST | Submit challenge answer & update streak |
+| `/api/assignments` | GET / POST | Homework assignments repository & submissions |
 | `/api/lesson-plans` | GET / POST | Manage lesson plans (MongoDB) |
 | `/api/training/modules` | GET | List teacher development modules |
 | `/api/training/readiness-assessment` | POST | Grade teacher readiness assessment |

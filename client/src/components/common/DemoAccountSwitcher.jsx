@@ -34,10 +34,10 @@ const DemoAccountSwitcher = () => {
   const currentBadge = getRoleBadge(role);
 
   return (
-    <div className="fixed bottom-6 left-6 z-40">
+    <div className="fixed bottom-4 left-3 sm:bottom-6 sm:left-6 z-40">
       <div className="relative">
         {isOpen && (
-          <div className="absolute bottom-12 left-0 w-72 bg-white rounded-2xl shadow-2xl border border-stone-200 p-4 mb-2 animate-in fade-in slide-in-from-bottom-2 duration-150">
+          <div className="absolute bottom-12 left-0 w-[calc(100vw-1.5rem)] max-w-72 bg-white rounded-2xl shadow-2xl border border-stone-200 p-4 mb-2 animate-in fade-in slide-in-from-bottom-2 duration-150">
             <div className="flex items-center justify-between pb-3 border-b border-stone-100 mb-2">
               <span className="text-xs font-bold uppercase tracking-wider text-bronze-800 flex items-center gap-1.5">
                 <Key className="w-3.5 h-3.5 text-brand-600" /> 1-Click Role Switcher
@@ -117,14 +117,14 @@ const DemoAccountSwitcher = () => {
 
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="flex items-center gap-2 px-3.5 py-2 rounded-full bg-white/90 backdrop-blur-md shadow-lg border border-stone-200 hover:border-brand-400 text-stone-800 transition-all text-xs font-medium cursor-pointer"
+          className="flex items-center gap-1.5 sm:gap-2 px-3 sm:px-3.5 py-1.5 sm:py-2 rounded-full bg-white/95 backdrop-blur-md shadow-lg border border-stone-200 hover:border-brand-400 text-stone-800 transition-all text-xs font-medium cursor-pointer"
         >
-          <span className="w-2 h-2 rounded-full bg-brand-500 animate-pulse"></span>
-          <span className="text-stone-500">Preview:</span>
-          <span className={`px-2 py-0.5 rounded-full text-[11px] font-semibold border ${currentBadge.color}`}>
+          <span className="w-2 h-2 rounded-full bg-brand-500 animate-pulse shrink-0"></span>
+          <span className="text-stone-500 hidden sm:inline">Preview:</span>
+          <span className={`px-2 py-0.5 rounded-full text-[10px] sm:text-[11px] font-semibold border ${currentBadge.color}`}>
             {currentBadge.label}
           </span>
-          {isOpen ? <ChevronDown className="w-3.5 h-3.5 text-stone-400" /> : <ChevronUp className="w-3.5 h-3.5 text-stone-400" />}
+          {isOpen ? <ChevronDown className="w-3.5 h-3.5 text-stone-400 shrink-0" /> : <ChevronUp className="w-3.5 h-3.5 text-stone-400 shrink-0" />}
         </button>
       </div>
     </div>

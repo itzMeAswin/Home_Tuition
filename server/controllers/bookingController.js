@@ -26,6 +26,7 @@ const createBooking = async (req, res) => {
 
     res.status(201).json({
       message: 'Free Demo Class booked successfully!',
+      bookingRef: booking.bookingRef,
       booking
     });
   } catch (error) {

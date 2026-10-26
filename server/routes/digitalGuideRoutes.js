@@ -5,5 +5,6 @@ const { getDigitalGuides, getDigitalGuide, submitLiteracyAssessment } = require(
 router.get('/', getDigitalGuides);
 router.get('/:idOrSlug', getDigitalGuide);
 router.post('/readiness-assessment', submitLiteracyAssessment);
+router.post('/assessment', submitLiteracyAssessment);
 
 module.exports = router;

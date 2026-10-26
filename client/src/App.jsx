@@ -38,7 +38,7 @@ const App = () => {
   };
 
   return (
-    <div className="flex flex-col min-h-screen bg-[#FAF8F5]">
+    <div className="flex flex-col min-h-screen bg-[#F8FAFC]">
       {/* Top Navbar */}
       <Navbar onOpenBookingModal={handleOpenBooking} />
 

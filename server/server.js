@@ -30,6 +30,7 @@ const trainingRoutes = require('./routes/trainingRoutes');
 const digitalGuideRoutes = require('./routes/digitalGuideRoutes');
 const dashboardRoutes = require('./routes/dashboardRoutes');
 const testimonialRoutes = require('./routes/testimonialRoutes');
+const assignmentRoutes = require('./routes/assignmentRoutes');
 const { seedData } = require('./seed');
 
 // Mount API routes
@@ -45,13 +46,14 @@ app.use('/api/training', trainingRoutes);
 app.use('/api/digital-guides', digitalGuideRoutes);
 app.use('/api/dashboard', dashboardRoutes);
 app.use('/api/testimonials', testimonialRoutes);
+app.use('/api/assignments', assignmentRoutes);
 
 // Health check & info
 app.get('/api/health', (req, res) => {
   res.json({
     status: 'online',
-    institution: 'Online Home Tution Center',
-    poweredBy: 'Online Home Tution Center',
+    institution: 'Home Tuition',
+    poweredBy: 'Home Tuition',
     version: '1.0.0',
     timestamp: new Date().toISOString()
   });
@@ -96,7 +98,7 @@ const startServer = async () => {
 
     app.listen(PORT, () => {
       console.log(`====================================================`);
-      console.log(`🚀 Online Home Tution Center API Server Running`);
+      console.log(`🚀 Home Tuition API Server Running`);
       console.log(`📍 Port: http://localhost:${PORT}`);
       console.log(`📡 Health Check: http://localhost:${PORT}/api/health`);
       console.log(`====================================================`);

@@ -11,7 +11,6 @@ const lessonPlanSchema = new mongoose.Schema({
   learningObjective: { type: String, required: true },
   teachingMethod: { 
     type: String, 
-    enum: ['Interactive Lecture & Discussion', 'Inquiry-Based Learning', 'Case Study & Problem Solving', 'Flipped Classroom', 'Socratic Questioning', 'Scaffolded Guided Practice'],
     default: 'Interactive Lecture & Discussion' 
   },
   activities: [{
@@ -20,10 +19,10 @@ const lessonPlanSchema = new mongoose.Schema({
     description: String
   }],
   materialsNeeded: [{ type: String }],
-  assessmentMethod: { type: String, required: true }, // e.g. 'Exit Ticket Quiz', 'Live Problem Solving', 'Peer Review'
+  assessmentMethod: { type: String, default: 'Exit Ticket Quiz' }, // e.g. 'Exit Ticket Quiz', 'Live Problem Solving', 'Peer Review'
   homeworkAssignment: { type: String, default: '' },
   reflectionNotes: { type: String, default: '' },
-  isPublicTemplate: { type: Boolean, default: false }
+  isPublicTemplate: { type: Boolean, default: true }
 }, { timestamps: true });
 
 module.exports = mongoose.model('LessonPlan', lessonPlanSchema);

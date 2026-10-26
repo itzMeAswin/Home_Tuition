@@ -7,7 +7,7 @@ const connectDB = async () => {
   try {
     console.log(`[DB] Attempting MongoDB connection to: ${uri.replace(/\/\/[^@]*@/, '//***:***@')}`);
     await mongoose.connect(uri, {
-      serverSelectionTimeoutMS: 4000,
+      serverSelectionTimeoutMS: 15000,
     });
     console.log(`[DB] MongoDB Connected: ${mongoose.connection.host}/${mongoose.connection.name}`);
   } catch (err) {

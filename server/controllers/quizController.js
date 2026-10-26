@@ -57,15 +57,16 @@ const getQuizById = async (req, res) => {
 };
 
 // @desc Submit quiz answers, calculate score, provide topic analysis & award points
-// @route POST /api/quizzes/:id/submit
+// @route POST /api/quizzes/:id/submit or POST /api/quizzes/submit
 const submitQuiz = async (req, res) => {
   try {
-    const quiz = await Quiz.findById(req.params.id);
+    const quizId = req.params.id || req.body.quizId;
+    const quiz = await Quiz.findById(quizId);
     if (!quiz) {
       return res.status(404).json({ message: 'Quiz not found' });
     }
 
-    const { userAnswers } = req.body; // Array: [{ index: 0, selectedOption: 2 }, ...]
+    const userAnswers = req.body.userAnswers || req.body.answers || [];
     const userId = req.user ? req.user._id : req.body.studentId;
 
     let correctCount = 0;

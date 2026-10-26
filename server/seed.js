@@ -52,7 +52,7 @@ const seedData = async () => {
       phone: '+91 9876543210',
       avatar: '',
       qualification: 'M.Com, M.Phil, MBA, SET Qualified',
-      bio: 'Lead Educator at Online Home Tution Center, Chennai. 15+ years of pedagogical excellence in Commerce, Accountancy, Economics & Business Studies.',
+      bio: 'Lead Educator at Home Tuition, Chennai. 15+ years of pedagogical excellence in Commerce, Accountancy, Economics & Business Studies.',
       subjects: ['Accountancy', 'Economics', 'Business Studies', 'Management Studies']
     });
 
@@ -70,7 +70,7 @@ const seedData = async () => {
       lastStreakDate: new Date().toISOString().split('T')[0],
       avatar: '',
       badges: [
-        { id: 'first_step', name: 'First Step', icon: 'Footprints', description: 'Joined the Online Home Tution Center family!' },
+        { id: 'first_step', name: 'First Step', icon: 'Footprints', description: 'Joined the Home Tuition family!' },
         { id: 'quick_learner', name: 'Quick Learner', icon: 'Zap', description: 'Completed first knowledge verification quiz!' },
         { id: 'consistent_star', name: 'Consistent Star', icon: 'Flame', description: 'Maintained a 5-day active learning streak!' },
         { id: 'quiz_champion', name: 'Quiz Champion', icon: 'Trophy', description: 'Scored 90%+ in CBSE Accountancy Diagnostic Quiz!' }
@@ -362,6 +362,156 @@ const seedData = async () => {
         tutorName: 'Mrs. Lakshmi S.',
         image: '',
         isFeatured: false
+      },
+      {
+        title: 'Class 9 to 12 Mathematics (Calculus, Algebra & Board Mastery)',
+        slug: 'cbse-mathematics-mastery',
+        subject: 'Mathematics',
+        category: 'Science & Math',
+        grades: ['Class 10', 'Class 11', 'Class 12'],
+        curriculum: ['CBSE', 'State Board', 'ICSE'],
+        mode: 'Online',
+        description: 'Overcome math anxiety with step-by-step problem dissection, formula memory maps, and rigorous NCERT exemplar practice.',
+        highlights: [
+          'Calculus and Coordinate Geometry visualized with graph tools',
+          'Timed problem-solving drills to boost board exam speed',
+          'Previous 10-year question paper walkthroughs'
+        ],
+        learningOutcomes: [
+          'Solve integration and differentiation with speed and confidence',
+          'Master probability, linear programming, and vector matrices',
+          'Gain high speed and precision for 100/100 board scores'
+        ],
+        duration: 'Academic Year (10 Months)',
+        sessionsPerWeek: '3 Sessions / Week',
+        tutorName: 'Er. Karthik R.',
+        image: '',
+        isFeatured: true
+      },
+      {
+        title: 'Classes 9 & 10 Integrated Science (Physics, Chemistry & Biology)',
+        slug: 'cbse-science-foundation',
+        subject: 'Science',
+        category: 'Science & Math',
+        grades: ['Class 9', 'Class 10'],
+        curriculum: ['CBSE', 'State Board'],
+        mode: 'Online',
+        description: 'Build robust foundational concepts in light reflection, chemical reactions, heredity, and electricity through interactive virtual simulations.',
+        highlights: [
+          'Diagram drawing mastery and equation balancing techniques',
+          'Assertion-reason and case-based question practice',
+          'Concept reinforcement through daily mini-quizzes'
+        ],
+        learningOutcomes: [
+          'Master ray diagrams, lens formula, and electric circuits',
+          'Balance complex chemical equations with oxidation states',
+          'Excel in CBSE board science theoretical and practical questions'
+        ],
+        duration: 'Academic Year (10 Months)',
+        sessionsPerWeek: '3 Sessions / Week',
+        tutorName: 'Dr. Suresh M.',
+        image: '',
+        isFeatured: true
+      },
+      {
+        title: 'English Core & Communicative (Grammar, Writing Skills & Literature)',
+        slug: 'cbse-english-core',
+        subject: 'English',
+        category: 'Languages & Humanities',
+        grades: ['Class 10', 'Class 11', 'Class 12'],
+        curriculum: ['CBSE', 'State Board', 'ICSE'],
+        mode: 'Online',
+        description: 'Master formal writing (articles, letters, invitations, analytical paragraphs) and deep literary analysis for effortless high marks in English.',
+        highlights: [
+          'Format blueprints for notice, letter, and report writing',
+          'Vocabulary expansion and error-spotting drills',
+          'Theme, poetic devices, and character sketch mastery'
+        ],
+        learningOutcomes: [
+          'Draft flawless formal correspondence within allotted board exam time',
+          'Analyze poetry with figurative language identification',
+          'Attain 95%+ marks in English board examinations'
+        ],
+        duration: 'Academic Year (8 Months)',
+        sessionsPerWeek: '2 Sessions / Week',
+        tutorName: 'Mrs. Jayanthi P.',
+        image: '',
+        isFeatured: false
+      },
+      {
+        title: 'Tamil Language & Literature (இலக்கணம், செய்யுள், உரைநடை)',
+        slug: 'tamil-language-literature',
+        subject: 'Tamil',
+        category: 'Languages & Humanities',
+        grades: ['Class 9', 'Class 10', 'Class 11', 'Class 12'],
+        curriculum: ['State Board', 'CBSE'],
+        mode: 'Online',
+        description: 'Comprehensive Tamil tuition focusing on Tholkappiyam grammar rules (இலக்கணம்), Thirukkural memorization, prose, and creative essay writing.',
+        highlights: [
+          'Step-by-step Tamil grammar breakdown (யாப்பிலக்கணம், அணி இலக்கணம்)',
+          'High-scoring format for letter and essay writing in Tamil',
+          'One-on-one pronunciation and reading fluency practice'
+        ],
+        learningOutcomes: [
+          'Score centum in Tamil grammar and vocabulary sections',
+          'Understand classical Sangam literature and modern prose',
+          'Write creative essays with authentic Tamil phrasing'
+        ],
+        duration: 'Academic Year (8 Months)',
+        sessionsPerWeek: '2 Sessions / Week',
+        tutorName: 'Mr. Senthamizh Selvan',
+        image: '',
+        isFeatured: false
+      },
+      {
+        title: 'Social Science Mastery (History, Geography, Political Science & Economics)',
+        slug: 'social-science-mastery',
+        subject: 'Social Science',
+        category: 'Languages & Humanities',
+        grades: ['Class 9', 'Class 10'],
+        curriculum: ['CBSE', 'State Board'],
+        mode: 'Online',
+        description: 'Turn social science into captivating stories. Master timeline mnemonics, map pointing precision, and structured multi-point board answers.',
+        highlights: [
+          'Timeline memory tricks for Indian National Movement and World History',
+          '100% accuracy in map pointing techniques',
+          '5-point answer structuring framework'
+        ],
+        learningOutcomes: [
+          'Effortlessly remember historical dates and events',
+          'Master topographical and thematic maps',
+          'Score 95%+ in Social Science board assessments'
+        ],
+        duration: 'Academic Year (8 Months)',
+        sessionsPerWeek: '2 Sessions / Week',
+        tutorName: 'Mrs. Lakshmi S.',
+        image: '',
+        isFeatured: false
+      },
+      {
+        title: 'Computer Science with Python & SQL (Classes 11 & 12)',
+        slug: 'computer-science-python',
+        subject: 'Computer Science',
+        category: 'Technology & Computing',
+        grades: ['Class 11', 'Class 12'],
+        curriculum: ['CBSE'],
+        mode: 'Online',
+        description: 'Hands-on programming tuition covering Python data structures, functions, file handling, MySQL connectivity, and computer networks.',
+        highlights: [
+          'Live interactive coding sessions with screen share and code reviews',
+          'Complete project guidance and practical examination viva coaching',
+          'Extensive database query and SQL joins practice'
+        ],
+        learningOutcomes: [
+          'Write Python scripts with clean recursion and file handling',
+          'Formulate complex MySQL queries and Python-MySQL database links',
+          'Score 100/100 in Computer Science theory and practicals'
+        ],
+        duration: 'Academic Year (8 Months)',
+        sessionsPerWeek: '3 Sessions / Week',
+        tutorName: 'Er. Rajesh Kumar',
+        image: '',
+        isFeatured: true
       }
     ]);
 
@@ -375,7 +525,7 @@ const seedData = async () => {
         subject: 'Accountancy',
         image: '',
         score: 'Centum 100/100',
-        quote: 'I was a student of Online Home Tution Center in 2024-25. The faculty classes were really effective and I understood every concept in the first go. I scored 100/100 on my Accountancy board paper! I truly credit these classes for my success.',
+        quote: 'I was a student of Home Tuition in 2024-25. The faculty classes were really effective and I understood every concept in the first go. I scored 100/100 on my Accountancy board paper! I truly credit these classes for my success.',
         parentQuote: 'We were worried about online coaching quality, but the faculty gave our daughter personal attention every day.',
         rating: 5,
         featured: true
@@ -388,7 +538,7 @@ const seedData = async () => {
         subject: 'Accountancy',
         image: '',
         score: '95/100',
-        quote: 'I studied 12th Accountancy at Online Home Tution Center. I scored 95/100, and the credit truly goes to the lead faculty. Her way of teaching is very clear, structured, and easy to understand, which made Accountancy feel much simpler.',
+        quote: 'I studied 12th Accountancy at Home Tuition. I scored 95/100, and the credit truly goes to the lead faculty. Her way of teaching is very clear, structured, and easy to understand, which made Accountancy feel much simpler.',
         rating: 5,
         featured: true
       },
@@ -424,7 +574,7 @@ const seedData = async () => {
         subject: 'Accountancy',
         image: '',
         score: 'Above 90',
-        quote: 'Just four months before my board exams, I couldn\'t find any tuition center willing to take me. Online Home Tution Center gave me that opportunity. The tutor quickly covered the entire syllabus and guided me well for my CBSE Accountancy exam.',
+        quote: 'Just four months before my board exams, I couldn\'t find any tuition center willing to take me. Home Tuition gave me that opportunity. The tutor quickly covered the entire syllabus and guided me well for my CBSE Accountancy exam.',
         rating: 5,
         featured: true
       },

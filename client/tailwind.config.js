@@ -8,29 +8,30 @@ export default {
     extend: {
       colors: {
         brand: {
-          50: '#FDFBF7',
-          100: '#F9F4E8',
-          200: '#F2E4C4',
-          300: '#E8D098',
-          400: '#DCB962',
-          500: '#C29B1A', // Primary Gold Ochre from Logo
-          600: '#A68212',
-          700: '#84660B',
-          800: '#5F4805',
-          900: '#3D2F03',
+          50: '#F0F7FF',
+          100: '#E0EFFF',
+          200: '#BAE0FD',
+          300: '#7DC4FC',
+          400: '#38A7F8',
+          500: '#2563EB', // Primary Vibrant Royal Blue
+          600: '#1D4ED8',
+          700: '#1E40AF',
+          800: '#1E3A8A',
+          900: '#172554',
+          950: '#0B132B',
         },
         bronze: {
-          50: '#FBF9F7',
-          100: '#F4EFEA',
-          200: '#E5DCD2',
-          300: '#CCBDB0',
-          400: '#9E8B7A',
-          500: '#6E5D4E',
-          600: '#524538',
-          700: '#3D3329',
-          800: '#2A231C', // Dark Coffee from Logo Text
-          900: '#1C1712',
-          950: '#0E0B09',
+          50: '#F8FAFC',  // Crisp slate surface
+          100: '#F1F5F9', // Soft light slate
+          200: '#E2E8F0', // Border slate
+          300: '#CBD5E1',
+          400: '#94A3B8',
+          500: '#64748B',
+          600: '#475569',
+          700: '#334155', // Rich slate text
+          800: '#1E293B', // Dark slate contrast
+          900: '#0F172A', // Midnight slate
+          950: '#020617', // Obsidian deep black
         },
         navy: {
           50: '#EFF6FF',
@@ -38,8 +39,8 @@ export default {
           500: '#3B82F6',
           700: '#1D4ED8',
           800: '#1E40AF',
-          900: '#1E293B',
-          950: '#0F172A',
+          900: '#0F172A',
+          950: '#020617',
         }
       },
       fontFamily: {

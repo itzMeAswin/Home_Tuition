@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { getTodayChallenge, submitChallenge } = require('../controllers/challengeController');
+const { getTodayChallenge, submitChallenge, getLeaderboard } = require('../controllers/challengeController');
 const { protect } = require('../middleware/authMiddleware');
 
 const optionalAuth = async (req, res, next) => {
@@ -19,6 +19,7 @@ const optionalAuth = async (req, res, next) => {
 };
 
 router.get('/today', optionalAuth, getTodayChallenge);
+router.get('/leaderboard', getLeaderboard);
 router.post('/submit', protect, submitChallenge);
 
 module.exports = router;

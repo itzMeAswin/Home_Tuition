@@ -50,7 +50,7 @@ const DemoBookingModal = ({ isOpen, onClose, preselectedSubject = '', preselecte
           particleCount: 100,
           spread: 70,
           origin: { y: 0.6 },
-          colors: ['#C29B1A', '#D4AF37', '#10B981', '#3B82F6'],
+          colors: ['#2563EB', '#06B6D4', '#4F46E5', '#10B981', '#38BDF8'],
         });
       } catch (err) {}
     } catch (error) {
@@ -67,35 +67,35 @@ const DemoBookingModal = ({ isOpen, onClose, preselectedSubject = '', preselecte
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm overflow-y-auto">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/60 backdrop-blur-sm overflow-y-auto">
       <motion.div
         initial={{ opacity: 0, scale: 0.95, y: 20 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
         exit={{ opacity: 0, scale: 0.95, y: 20 }}
-        className="relative w-full max-w-2xl bg-white rounded-3xl shadow-2xl border border-brand-200 overflow-hidden my-8"
+        className="relative w-full max-w-2xl bg-white rounded-3xl shadow-2xl border border-brand-200 overflow-hidden my-auto max-h-[92vh] flex flex-col"
       >
         {/* Header Ribbon */}
-        <div className="bg-gradient-to-r from-bronze-900 via-bronze-800 to-brand-800 text-white p-6 sm:p-8 relative">
+        <div className="bg-gradient-to-r from-bronze-900 via-bronze-800 to-brand-800 text-white p-5 sm:p-7 relative shrink-0">
           <button
             onClick={handleResetAndClose}
-            className="absolute top-5 right-5 p-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors text-white"
+            className="absolute top-4 right-4 sm:top-5 sm:right-5 p-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors text-white cursor-pointer"
           >
             <X className="w-5 h-5" />
           </button>
-          <div className="flex items-center gap-3 mb-2">
-            <span className="px-3 py-1 rounded-full bg-brand-500/30 border border-brand-400/40 text-brand-200 text-xs font-semibold tracking-wide uppercase flex items-center gap-1.5">
+          <div className="flex items-center gap-2 sm:gap-3 mb-2 flex-wrap">
+            <span className="px-3 py-0.5 rounded-full bg-brand-500/30 border border-brand-400/40 text-brand-200 text-xs font-semibold tracking-wide uppercase flex items-center gap-1.5">
               <Sparkles className="w-3.5 h-3.5 text-brand-300" /> 100% Free Trial Class
             </span>
             <span className="text-white/60 text-xs">No Credit Card Required</span>
           </div>
-          <h3 className="text-2xl sm:text-3xl font-heading font-bold">Book a Free Live Demo Class</h3>
-          <p className="text-stone-300 text-sm mt-1">
+          <h3 className="text-xl sm:text-2xl md:text-3xl font-heading font-bold">Book a Free Live Demo Class</h3>
+          <p className="text-stone-300 text-xs sm:text-sm mt-1">
             Experience our interactive teaching methodology, personalized concept breakdown, and expert guidance.
           </p>
         </div>
 
         {/* Content Body */}
-        <div className="p-6 sm:p-8">
+        <div className="p-5 sm:p-7 overflow-y-auto flex-1">
           {confirmedBooking ? (
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
@@ -112,7 +112,7 @@ const DemoBookingModal = ({ isOpen, onClose, preselectedSubject = '', preselecte
                 Thank you, <strong className="text-bronze-900">{confirmedBooking.studentName}</strong>. Your free trial session has been confirmed.
               </p>
 
-              <div className="bg-[#FAF8F5] border border-brand-200 rounded-2xl p-5 max-w-md mx-auto text-left mb-6 space-y-2.5 text-sm">
+              <div className="bg-[#F8FAFC] border border-brand-200 rounded-2xl p-5 max-w-md mx-auto text-left mb-6 space-y-2.5 text-sm">
                 <div className="flex justify-between items-center pb-2 border-b border-brand-200/60">
                   <span className="text-bronze-600">Booking Reference:</span>
                   <span className="font-mono font-bold text-brand-700">{confirmedBooking.bookingRef}</span>
@@ -340,7 +340,7 @@ const DemoBookingModal = ({ isOpen, onClose, preselectedSubject = '', preselecte
                 <button
                   type="submit"
                   disabled={loading}
-                  className="w-full py-3.5 rounded-xl bg-gradient-to-r from-brand-600 via-brand-500 to-amber-600 hover:from-brand-700 hover:to-amber-700 text-white font-semibold text-base shadow-lg shadow-brand-500/25 flex items-center justify-center gap-2 transition-all transform hover:-translate-y-0.5"
+                  className="w-full py-3.5 rounded-xl bg-gradient-to-r from-brand-600 via-brand-500 to-indigo-600 hover:from-brand-700 hover:to-indigo-700 text-white font-semibold text-base shadow-lg shadow-brand-500/25 flex items-center justify-center gap-2 transition-all transform hover:-translate-y-0.5 cursor-pointer"
                 >
                   {loading ? (
                     <span>Scheduling Demo Class...</span>

@@ -1,13 +1,13 @@
 import React from 'react';
 import { GraduationCap, Award, Users, Shield, User } from 'lucide-react';
 
-const GRADIENTS = [
-  'from-amber-500 to-brand-600 text-white',
-  'from-blue-500 to-indigo-600 text-white',
-  'from-emerald-500 to-teal-600 text-white',
-  'from-purple-500 to-pink-600 text-white',
-  'from-rose-500 to-amber-600 text-white',
-  'from-brand-600 to-amber-700 text-white',
+const SOLID_COLORS = [
+  'bg-blue-600 text-white',
+  'bg-indigo-600 text-white',
+  'bg-emerald-600 text-white',
+  'bg-purple-600 text-white',
+  'bg-rose-600 text-white',
+  'bg-sky-600 text-white',
 ];
 
 const UserAvatar = ({ name = 'Student', role = 'student', size = 'md', className = '' }) => {
@@ -17,12 +17,12 @@ const UserAvatar = ({ name = 'Student', role = 'student', size = 'md', className
     ? (parts[0][0] + parts[1][0]).toUpperCase()
     : parts[0].slice(0, 2).toUpperCase();
 
-  // Pick deterministic gradient from name string
+  // Pick deterministic solid color from name string
   let hash = 0;
   for (let i = 0; i < name.length; i++) {
     hash = name.charCodeAt(i) + ((hash << 5) - hash);
   }
-  const gradient = GRADIENTS[Math.abs(hash) % GRADIENTS.length];
+  const colorClass = SOLID_COLORS[Math.abs(hash) % SOLID_COLORS.length];
 
   const sizeClasses = {
     sm: 'w-8 h-8 text-xs',
@@ -34,7 +34,7 @@ const UserAvatar = ({ name = 'Student', role = 'student', size = 'md', className
 
   return (
     <div
-      className={`rounded-2xl bg-gradient-to-br ${gradient} flex items-center justify-center font-heading shrink-0 shadow-sm border border-white/20 select-none ${sizeClasses[size] || sizeClasses.md} ${className}`}
+      className={`rounded-2xl ${colorClass} flex items-center justify-center font-heading shrink-0 shadow-sm border border-white/20 select-none ${sizeClasses[size] || sizeClasses.md} ${className}`}
     >
       <span>{initials}</span>
     </div>

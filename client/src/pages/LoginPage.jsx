@@ -48,12 +48,12 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#FAF8F5] flex items-center justify-center p-4 py-16">
+    <div className="min-h-screen bg-[#F8FAFC] flex items-center justify-center p-4 py-16">
       <div className="w-full max-w-md bg-white rounded-3xl p-8 shadow-2xl border border-brand-200 space-y-6">
         {/* Brand Header */}
         <div className="text-center space-y-2">
           <Link to="/" className="inline-block">
-            <img src="/logo.svg" alt="Logo" className="h-14 w-auto mx-auto object-contain" />
+            <img src="/logo.png" alt="Logo" className="h-14 w-auto mx-auto object-contain rounded-2xl" />
           </Link>
           <h2 className="text-2xl font-heading font-extrabold text-bronze-950">
             Sign In to Your Portal
@@ -138,7 +138,7 @@ const LoginPage = () => {
           <button
             type="submit"
             disabled={loading}
-            className="w-full py-3.5 rounded-xl bg-gradient-to-r from-brand-600 to-amber-600 hover:from-brand-700 hover:to-amber-700 text-white font-bold text-xs uppercase tracking-wider shadow-md shadow-brand-500/20 transition cursor-pointer"
+            className="w-full py-3.5 rounded-xl bg-gradient-to-r from-brand-600 via-brand-500 to-indigo-600 hover:from-brand-700 hover:to-indigo-700 text-white font-bold text-xs uppercase tracking-wider shadow-md shadow-brand-500/20 transition cursor-pointer"
           >
             {loading ? 'Authenticating...' : 'Sign In'}
           </button>

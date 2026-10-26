@@ -141,4 +141,30 @@ const submitChallenge = async (req, res) => {
   }
 };
 
-module.exports = { getTodayChallenge, submitChallenge };
+// @desc Get public student leaderboard
+// @route GET /api/challenges/leaderboard
+const getLeaderboard = async (req, res) => {
+  try {
+    const topStudents = await User.find({ role: 'student' })
+      .select('name displayName points streak avatar badges grade')
+      .sort({ points: -1 })
+      .limit(10);
+
+    const formattedLeaderboard = topStudents.map((s, index) => ({
+      rank: index + 1,
+      name: s.displayName || s.name.split(' ')[0] + (s.name.split(' ')[1] ? ' ' + s.name.split(' ')[1][0] + '.' : ''),
+      points: s.points,
+      streak: s.streak,
+      avatar: s.avatar || '',
+      badgeCount: s.badges?.length || 0,
+      grade: s.grade,
+      title: index === 0 ? 'Legendary Scholar' : index < 3 ? 'Master Thinker' : 'Curious Explorer'
+    }));
+
+    res.json(formattedLeaderboard);
+  } catch (error) {
+    res.status(500).json({ message: 'Error fetching leaderboard', error: error.message });
+  }
+};
+
+module.exports = { getTodayChallenge, submitChallenge, getLeaderboard };

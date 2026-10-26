@@ -34,10 +34,39 @@ const getLessonPlanById = async (req, res) => {
 // @route POST /api/lesson-plans
 const createLessonPlan = async (req, res) => {
   try {
+    let { title, topic, activities, assessmentMethod, assessmentTechnique } = req.body;
+    
+    // Normalize fields
+    title = title || topic || 'Custom Lesson Plan';
+    topic = topic || title;
+    assessmentMethod = assessmentMethod || assessmentTechnique || 'Exit Ticket Quiz';
+
+    let normalizedActivities = [];
+    if (Array.isArray(activities)) {
+      normalizedActivities = activities.map(a => {
+        if (typeof a === 'string') return { time: 'Session', title: a, description: '' };
+        return a;
+      });
+    } else if (typeof activities === 'string' && activities.trim()) {
+      normalizedActivities = [{ time: '0 - 60 mins', title: 'Core Lesson Flow', description: activities }];
+    } else {
+      normalizedActivities = [
+        { time: '0 - 10 mins', title: 'Concept Hook', description: 'Introduce core problem' },
+        { time: '10 - 35 mins', title: 'Guided Practice', description: 'Step-by-step problem dissection' },
+        { time: '35 - 50 mins', title: 'Independent Application', description: 'Student hands-on exercise' },
+        { time: '50 - 60 mins', title: 'Exit Ticket', description: 'Formative diagnostic evaluation' }
+      ];
+    }
+
     const plan = await LessonPlan.create({
       ...req.body,
+      title,
+      topic,
+      assessmentMethod,
+      activities: normalizedActivities,
       tutor: req.user ? req.user._id : null,
-      tutorName: req.user ? req.user.name : 'Educator'
+      tutorName: req.user ? req.user.name : (req.body.tutorName || 'Educator'),
+      isPublicTemplate: true
     });
     res.status(201).json(plan);
   } catch (error) {

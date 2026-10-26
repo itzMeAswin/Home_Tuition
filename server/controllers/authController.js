@@ -18,7 +18,7 @@ const register = async (req, res) => {
 
     // Default badges for new students
     const initialBadges = role === 'student' ? [
-      { id: 'first_step', name: 'First Step', icon: 'Footprints', description: 'Joined the Online Home Tution Center family!' }
+      { id: 'first_step', name: 'First Step', icon: 'Footprints', description: 'Joined the Home Tuition family!' }
     ] : [];
 
     const user = await User.create({

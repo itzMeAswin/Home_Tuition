@@ -1,7 +1,7 @@
 {
-  "name": "tution-web-server",
+  "name": "home-tuition-server",
   "version": "1.0.0",
-  "description": "Backend API for Online Home Tution Center",
+  "description": "Backend API for Home Tuition",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
